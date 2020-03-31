@@ -5,15 +5,17 @@
  * See /LICENSE for more information.
  */
 
+import React from "react";
+
 import Netmetr from "./Netmetr/Netmetr";
+import NetmetrIcon from "./Netmetr/NetmetrIcon";
 
 const NetmetrPlugin = {
     name: _("Netmetr"),
-    weight: 100,
-    submenuId: "netmetr",
+    weight: 65,
     path: "/netmetr",
     component: Netmetr,
-    icon: "cube",
+    icon: <NetmetrIcon />,
 };
 
 ForisPlugins.push(NetmetrPlugin);
