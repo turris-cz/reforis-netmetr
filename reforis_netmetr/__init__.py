@@ -30,17 +30,30 @@ netmetr = {
 }
 
 
-@blueprint.route('/example', methods=['GET'])
-def get_example():
-    return jsonify(current_app.backend.perform('example_module', 'example_action'))
+@blueprint.route('/settings', methods=['GET'])
+def get_settings():
+    return jsonify(current_app.backend.perform('netmetr', 'get_settings'))
 
 
-@blueprint.route('/example', methods=['POST'])
-def post_example():
-    validate_json(request.json, {'modules': list})
-
-    response = current_app.backend.perform('example_module', 'example_action', request.json)
+@blueprint.route('/settings', methods=['POST'])
+def post_settings():
+    response = current_app.backend.perform('netmetr', 'update_settings', request.json)
     if response.get('result') is not True:
-        raise APIError(_('Cannot create entity'), HTTPStatus.INTERNAL_SERVER_ERROR)
+        raise APIError(_('Cannot update netmetr settings.'), HTTPStatus.INTERNAL_SERVER_ERROR)
 
     return jsonify(response), HTTPStatus.CREATED
+
+
+@blueprint.route('/data', methods=['GET'])
+def get_data():
+    return jsonify(current_app.backend.perform('netmetr', 'get_data'))
+
+
+@blueprint.route('/trigger-download-data', methods=['POST'])
+def trigger_download_data():
+    return jsonify(current_app.backend.perform('netmetr', 'download_data'))
+
+
+@blueprint.route('/trigger-measure-speed-and-download-data', methods=['POST'])
+def trigger_measure_speed_and_download_data():
+    return jsonify(current_app.backend.perform('netmetr', 'measure_and_download_data'))

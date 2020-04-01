@@ -7,11 +7,14 @@
 
 import { REFORIS_URL_PREFIX } from "foris";
 
-const API_URL_PREFIX = `${REFORIS_URL_PREFIX}/netmetr/api`;
+const API_URL_PREFIX = `${REFORIS_URL_PREFIX}/netmetr/api/`;
 
 const API_URLs = new Proxy(
     {
-        example: "/example",
+        settings: "settings",
+        data: "data",
+        triggerDownloadData: "trigger-download-data",
+        triggerMeasureSpeedAndDownloadData: "trigger-measure-speed-and-download-data",
     },
     {
         get: (target, name) => `${API_URL_PREFIX}${target[name]}`,
