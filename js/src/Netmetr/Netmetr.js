@@ -7,20 +7,31 @@
 
 import React, { useEffect } from "react";
 
-import { useAPIGet } from "foris";
+import { ForisForm, useAPIGet } from "foris";
 
 import API_URLs from "API";
+import AutostartForm from "./AutostartForm/AutostartForm";
 
-export default function Netmetr() {
-    const [, getExample] = useAPIGet(API_URLs.example);
-    useEffect(() => {
-        getExample();
-    }, [getExample]);
-
+export default function Netmetr({ ws }) {
     return (
         <>
             <h1>Netmetr</h1>
-            <p>{_("Add your components here")}</p>
+            <p>{_("Netmeter measures your internet parameters like upload, download and response time.")}</p>
+            <ForisForm
+                ws={ws}
+                forisConfig={{
+                    endpoint: API_URLs.settings,
+                    wsModule: "netmetr",
+                }}
+                prepDataToSubmit={prepDataToSubmit}
+            >
+                <AutostartForm />
+            </ForisForm>
         </>
     );
+}
+
+function prepDataToSubmit(data) {
+    delete data.sync_code;
+    return data;
 }
