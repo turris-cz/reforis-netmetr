@@ -15,6 +15,7 @@ import SyncCodeSetter from "./AutostartForm/SyncCodeSetter";
 import Results from "./Results/Results";
 import Controls from "./Controls/Controls";
 import LinkToMyNetmetr from "./LinkToMyNetmetr";
+import TestProgress from "./TestProgress/TestProgress";
 
 export default function Netmetr({ ws }) {
     const [syncCode, setSyncCode] = useState(null);
