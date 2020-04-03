@@ -12,6 +12,7 @@ import { ForisForm } from "foris";
 import API_URLs from "API";
 import AutostartForm from "./AutostartForm/AutostartForm";
 import SyncCodeSetter from "./AutostartForm/SyncCodeSetter";
+import Results from "./Results/Results";
 
 export default function Netmetr({ ws }) {
     const [syncCode, setSyncCode] = useState(null);

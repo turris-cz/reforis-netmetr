@@ -7,7 +7,8 @@
   "main": "./src/app.js",
   "dependencies": {
     "foris": "^4.5.0",
-    "react-uid": "^2.2.0"
+    "react-uid": "^2.2.0",
+    "moment": "^2.24.0"
   },
   "peerDependencies": {
     "prop-types": "15.7.2",
