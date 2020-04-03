@@ -13,6 +13,8 @@ import API_URLs from "API";
 import AutostartForm from "./AutostartForm/AutostartForm";
 import SyncCodeSetter from "./AutostartForm/SyncCodeSetter";
 import Results from "./Results/Results";
+import Controls from "./Controls/Controls";
+import LinkToMyNetmetr from "./LinkToMyNetmetr";
 
 export default function Netmetr({ ws }) {
     const [syncCode, setSyncCode] = useState(null);
