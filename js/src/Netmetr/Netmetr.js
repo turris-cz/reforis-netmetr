@@ -5,14 +5,16 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 
-import { ForisForm, useAPIGet } from "foris";
+import { ForisForm } from "foris";
 
 import API_URLs from "API";
 import AutostartForm from "./AutostartForm/AutostartForm";
+import SyncCodeSetter from "./AutostartForm/SyncCodeSetter";
 
 export default function Netmetr({ ws }) {
+    const [syncCode, setSyncCode] = useState(null);
     return (
         <>
             <h1>Netmetr</h1>
@@ -26,7 +28,21 @@ export default function Netmetr({ ws }) {
                 prepDataToSubmit={prepDataToSubmit}
             >
                 <AutostartForm />
+                <SyncCodeSetter setSyncCode={setSyncCode} />
             </ForisForm>
+            <Controls
+                ws={ws}
+
+                asyncIdSpeedTest={asyncIdSpeedTest}
+                setAsyncIdSpeedTest={setAsyncIdSpeedTest}
+
+                asyncIdRedownloadData={asyncIdRedownloadData}
+                setAsyncIdRedownloadData={setAsyncIdRedownloadData}
+            />
+            <TestProgress ws={ws} asyncId={asyncIdSpeedTest} />
+
+            <Results ws={ws} />
+            {syncCode && <LinkToMyNetmetr syncCode={syncCode} />}
         </>
     );
 }
