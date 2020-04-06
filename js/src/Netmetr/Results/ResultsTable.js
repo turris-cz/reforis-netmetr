@@ -7,6 +7,7 @@
 
 import React from "react";
 import { withErrorMessage, withSpinnerOnSending } from "foris";
+
 import ResultsTableRow from "./ResultsTableRow";
 
 function ResultsTable({ performed_tests }) {

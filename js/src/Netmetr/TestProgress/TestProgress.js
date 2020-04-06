@@ -6,8 +6,8 @@
  */
 
 import React from "react";
-import useNetmetrTest from "./hooks";
 
+import useNetmetrTest from "./hooks";
 import "./TestProgress.css";
 
 export default function TestProgress({ ws }) {

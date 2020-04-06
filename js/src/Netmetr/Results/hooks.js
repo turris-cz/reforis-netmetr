@@ -5,31 +5,32 @@
  * See /LICENSE for more information.
  */
 
-import { useState, useEffect } from "react";
-import { ALERT_TYPES, useAlert, useWSForisModule } from "foris";
+import { useEffect } from "react";
+import { useAPIGet, useWSForisModule } from "foris";
 
-export default function useNetmetrTest(ws) {
-    const [data, setData] = useState(null);
-    const [setAlert] = useAlert();
+import API_URLs from "API";
 
-    const [dataProcess] = useWSForisModule(ws, "netmetr", "measure_and_download_data_notification");
+export default function useNetmetrResults(ws, asyncId) {
+    const [getDataState, getDataRequest] = useAPIGet(API_URLs.data);
     useEffect(() => {
-        if (dataProcess) {
-            setData((currentData) => ({ ...currentData, ...dataProcess }));
-        }
-    }, [dataProcess]);
+        getDataRequest();
+    }, [getDataRequest]);
 
-    const [dataFinished] = useWSForisModule(ws, "netmetr", "measure_and_download_data_finished");
+    const [dataDownloadDataFinishedData] = useWSForisModule(ws, "netmetr", "download_data_finished");
     useEffect(() => {
-        if (dataFinished) {
-            if (dataFinished.passed) {
-                setAlert(_("Speed test finished successfully."), ALERT_TYPES.SUCCESS);
-            } else {
-                setAlert(_("Speed test failed."), ALERT_TYPES.DANGER);
-            }
-            setData(() => null);
+        if (dataDownloadDataFinishedData
+            && dataDownloadDataFinishedData.async_id === asyncId) {
+            getDataRequest();
         }
-    }, [dataFinished, setAlert]);
+    }, [asyncId, dataDownloadDataFinishedData, getDataRequest]);
 
-    return [data];
+    const [measureAndDownloadDataFinishedData] = useWSForisModule(ws, "netmetr", "measure_and_download_data_finished");
+    useEffect(() => {
+        if (measureAndDownloadDataFinishedData
+            && measureAndDownloadDataFinishedData.async_id === asyncId) {
+            getDataRequest();
+        }
+    }, [asyncId, getDataRequest, measureAndDownloadDataFinishedData]);
+
+    return [getDataState];
 }

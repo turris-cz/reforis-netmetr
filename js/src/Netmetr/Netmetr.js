@@ -6,7 +6,6 @@
  */
 
 import React, { useState } from "react";
-
 import { ForisForm } from "foris";
 
 import API_URLs from "API";
@@ -16,9 +15,13 @@ import Results from "./Results/Results";
 import Controls from "./Controls/Controls";
 import LinkToMyNetmetr from "./LinkToMyNetmetr";
 import TestProgress from "./TestProgress/TestProgress";
+import useNetmetrAlerts from "./hooks";
 
 export default function Netmetr({ ws }) {
     const [syncCode, setSyncCode] = useState(null);
+    const [asyncId, setAsyncId] = useState(null);
+    useNetmetrAlerts(ws);
+
     return (
         <>
             <h1>Netmetr</h1>

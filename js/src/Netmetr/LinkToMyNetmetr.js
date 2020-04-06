@@ -6,6 +6,7 @@
  */
 
 import React from "react";
+
 import { NETMETR_MY_URL } from "./constants";
 
 export default function LinkToMyNetmetr({ syncCode }) {

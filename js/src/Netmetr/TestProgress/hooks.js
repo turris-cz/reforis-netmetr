@@ -6,7 +6,7 @@
  */
 
 import { useState, useEffect } from "react";
-import { ALERT_TYPES, useAlert, useWSForisModule } from "foris";
+import { useAlert, useWSForisModule } from "foris";
 
 export default function useNetmetrTest(ws) {
     const [data, setData] = useState(null);
@@ -22,11 +22,6 @@ export default function useNetmetrTest(ws) {
     const [dataFinished] = useWSForisModule(ws, "netmetr", "measure_and_download_data_finished");
     useEffect(() => {
         if (dataFinished) {
-            if (dataFinished.passed) {
-                setAlert(_("Speed test finished successfully."), ALERT_TYPES.SUCCESS);
-            } else {
-                setAlert(_("Speed test failed."), ALERT_TYPES.DANGER);
-            }
             setData(() => null);
         }
     }, [dataFinished, setAlert]);

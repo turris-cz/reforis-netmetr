@@ -5,24 +5,19 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect } from "react";
-import { useAPIGet } from "foris";
+import React from "react";
 
-import API_URLs from "API";
 import ResultsTableWithErrorAndSpinner from "./ResultsTable";
+import useNetmetrResults from "./hooks";
 
-export default function Results() {
-    const [getDataState, getDataRequest] = useAPIGet(API_URLs.data);
-    useEffect(() => {
-        getDataRequest();
-    }, [getDataRequest]);
-
+export default function Results({ ws, asyncId }) {
+    const [data] = useNetmetrResults(ws, asyncId);
     return (
         <>
             <h3>{_("Results")}</h3>
             <ResultsTableWithErrorAndSpinner
-                apiState={getDataState.state}
-                performed_tests={(getDataState.data || {}).performed_tests}
+                apiState={data.state}
+                performed_tests={(data.data || {}).performed_tests}
             />
         </>
     );

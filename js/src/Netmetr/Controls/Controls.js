@@ -10,17 +10,14 @@ import React from "react";
 import "./Controls.css";
 import RedownloadDataButton from "./RedownloadDataButton";
 import StartTestButton from "./StartTestButton";
-import useNetmetrTest from "../TestProgress/hooks";
 
-export default function Controls({ ws }) {
-    const [] = useNetmetrTest(ws);
-
+export default function Controls({ setAsyncId }) {
     return (
         <>
             <h3>{_("Controls")}</h3>
             <div className="netmetr-controls">
-                <StartTestButton />
-                <RedownloadDataButton />
+                <StartTestButton setAsyncId={setAsyncId} />
+                <RedownloadDataButton setAsyncId={setAsyncId} />
             </div>
         </>
     );

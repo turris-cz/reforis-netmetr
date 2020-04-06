@@ -5,13 +5,18 @@
  * See /LICENSE for more information.
  */
 
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, useAPIPost } from "foris";
 
 import API_URLs from "API";
 
-export default function StartTestButton() {
+export default function StartTestButton({ setAsyncId }) {
     const [triggerTestState, triggerTest] = useAPIPost(API_URLs.triggerMeasureSpeedAndDownloadData);
+    useEffect(() => {
+        if (triggerTestState.data && triggerTestState.data.async_id) {
+            setAsyncId(triggerTestState.data.async_id);
+        }
+    }, [setAsyncId, triggerTestState.data]);
 
     return (
         <Button onClick={triggerTest}>
