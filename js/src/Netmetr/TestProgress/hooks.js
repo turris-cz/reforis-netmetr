@@ -8,23 +8,23 @@
 import { useState, useEffect } from "react";
 import { useAlert, useWSForisModule } from "foris";
 
-export default function useNetmetrTest(ws) {
+export default function useNetmetrTest(ws, asyncId) {
     const [data, setData] = useState(null);
     const [setAlert] = useAlert();
 
-    const [dataProcess] = useWSForisModule(ws, "netmetr", "measure_and_download_data_notification");
+    const [measureAndDownloadData] = useWSForisModule(ws, "netmetr", "measure_and_download_data_notification");
     useEffect(() => {
-        if (dataProcess) {
-            setData((currentData) => ({ ...currentData, ...dataProcess }));
+        if (measureAndDownloadData && measureAndDownloadData.async_id === asyncId) {
+            setData((currentData) => ({ ...currentData, ...measureAndDownloadData }));
         }
-    }, [dataProcess]);
+    }, [asyncId, measureAndDownloadData]);
 
-    const [dataFinished] = useWSForisModule(ws, "netmetr", "measure_and_download_data_finished");
+    const [measureAndDownloadDataFinished] = useWSForisModule(ws, "netmetr", "measure_and_download_data_finished");
     useEffect(() => {
-        if (dataFinished) {
+        if (measureAndDownloadDataFinished && measureAndDownloadDataFinished.async_id === asyncId) {
             setData(() => null);
         }
-    }, [dataFinished, setAlert]);
+    }, [asyncId, measureAndDownloadDataFinished, setAlert]);
 
     return [data];
 }

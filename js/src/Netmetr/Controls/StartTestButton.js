@@ -5,21 +5,21 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect } from "react";
-import { Button, useAPIPost } from "foris";
+import React from "react";
+import { Button } from "foris";
 
-import API_URLs from "API";
+import { useStartTest } from "./hooks";
 
-export default function StartTestButton({ setAsyncId }) {
-    const [triggerTestState, triggerTest] = useAPIPost(API_URLs.triggerMeasureSpeedAndDownloadData);
-    useEffect(() => {
-        if (triggerTestState.data && triggerTestState.data.async_id) {
-            setAsyncId(triggerTestState.data.async_id);
-        }
-    }, [setAsyncId, triggerTestState.data]);
+export default function StartTestButton({ ws, asyncId, setAsyncId }) {
+    const [onClickHandler, isLoading] = useStartTest(ws, asyncId, setAsyncId);
 
     return (
-        <Button onClick={triggerTest}>
+        <Button
+            className="btn-primary offset-lg-1 col-lg-4 col-sm-12"
+            loading={isLoading}
+            disabled={isLoading}
+            onClick={onClickHandler}
+        >
             {_("Start test")}
         </Button>
     );

@@ -10,7 +10,7 @@ import { useAPIGet, useWSForisModule } from "foris";
 
 import API_URLs from "API";
 
-export default function useNetmetrResults(ws, asyncId) {
+export default function useNetmetrResults(ws) {
     const [getDataState, getDataRequest] = useAPIGet(API_URLs.data);
     useEffect(() => {
         getDataRequest();
@@ -18,19 +18,17 @@ export default function useNetmetrResults(ws, asyncId) {
 
     const [dataDownloadDataFinishedData] = useWSForisModule(ws, "netmetr", "download_data_finished");
     useEffect(() => {
-        if (dataDownloadDataFinishedData
-            && dataDownloadDataFinishedData.async_id === asyncId) {
+        if (dataDownloadDataFinishedData) {
             getDataRequest();
         }
-    }, [asyncId, dataDownloadDataFinishedData, getDataRequest]);
+    }, [getDataRequest, dataDownloadDataFinishedData]);
 
     const [measureAndDownloadDataFinishedData] = useWSForisModule(ws, "netmetr", "measure_and_download_data_finished");
     useEffect(() => {
-        if (measureAndDownloadDataFinishedData
-            && measureAndDownloadDataFinishedData.async_id === asyncId) {
+        if (measureAndDownloadDataFinishedData) {
             getDataRequest();
         }
-    }, [asyncId, getDataRequest, measureAndDownloadDataFinishedData]);
+    }, [getDataRequest, measureAndDownloadDataFinishedData]);
 
     return [getDataState];
 }

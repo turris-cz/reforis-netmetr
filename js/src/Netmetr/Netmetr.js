@@ -19,7 +19,9 @@ import useNetmetrAlerts from "./hooks";
 
 export default function Netmetr({ ws }) {
     const [syncCode, setSyncCode] = useState(null);
-    const [asyncId, setAsyncId] = useState(null);
+    const [asyncIdSpeedTest, setAsyncIdSpeedTest] = useState(null);
+    const [asyncIdRedownloadData, setAsyncIdRedownloadData] = useState(null);
+
     useNetmetrAlerts(ws);
 
     return (

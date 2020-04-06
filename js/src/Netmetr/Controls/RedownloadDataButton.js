@@ -5,25 +5,21 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect } from "react";
-import { Button, useAPIPost } from "foris";
+import React from "react";
+import { Button } from "foris";
 
-import API_URLs from "API";
+import { useRedownloadData } from "./hooks";
 
-export default function RedownloadDataButton({ setAsyncId }) {
-    const [
-        triggerDownloadDataState,
-        triggerDownloadDataRequest,
-    ] = useAPIPost(API_URLs.triggerDownloadData);
-
-    useEffect(() => {
-        if (triggerDownloadDataState.data && triggerDownloadDataState.data.async_id) {
-            setAsyncId(triggerDownloadDataState.data.async_id);
-        }
-    }, [setAsyncId, triggerDownloadDataState.data]);
+export default function RedownloadDataButton({ ws, asyncId, setAsyncId }) {
+    const [onClickHandler, isLoading] = useRedownloadData(ws, asyncId, setAsyncId);
 
     return (
-        <Button onClick={triggerDownloadDataRequest}>
+        <Button
+            className="btn-primary col-sm-12 col-lg-4 offset-lg-2 col-lg-3"
+            loading={isLoading}
+            disabled={isLoading}
+            onClick={onClickHandler}
+        >
             {_("Redownload data")}
         </Button>
     );

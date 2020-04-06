@@ -11,13 +11,25 @@ import "./Controls.css";
 import RedownloadDataButton from "./RedownloadDataButton";
 import StartTestButton from "./StartTestButton";
 
-export default function Controls({ setAsyncId }) {
+export default function Controls({
+    ws,
+    asyncIdSpeedTest, setAsyncIdSpeedTest,
+    asyncIdRedownloadData, setAsyncIdRedownloadData,
+}) {
     return (
         <>
             <h3>{_("Controls")}</h3>
             <div className="netmetr-controls">
-                <StartTestButton setAsyncId={setAsyncId} />
-                <RedownloadDataButton setAsyncId={setAsyncId} />
+                <StartTestButton
+                    ws={ws}
+                    asyncId={asyncIdSpeedTest}
+                    setAsyncId={setAsyncIdSpeedTest}
+                />
+                <RedownloadDataButton
+                    ws={ws}
+                    asyncId={asyncIdRedownloadData}
+                    setAsyncId={setAsyncIdRedownloadData}
+                />
             </div>
         </>
     );

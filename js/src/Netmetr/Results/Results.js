@@ -10,8 +10,9 @@ import React from "react";
 import ResultsTableWithErrorAndSpinner from "./ResultsTable";
 import useNetmetrResults from "./hooks";
 
-export default function Results({ ws, asyncId }) {
-    const [data] = useNetmetrResults(ws, asyncId);
+export default function Results({ ws }) {
+    const [data] = useNetmetrResults(ws);
+
     return (
         <>
             <h3>{_("Results")}</h3>

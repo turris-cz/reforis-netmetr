@@ -10,9 +10,11 @@ import React from "react";
 import useNetmetrTest from "./hooks";
 import "./TestProgress.css";
 
-export default function TestProgress({ ws }) {
-    const [data] = useNetmetrTest(ws);
+export default function TestProgress({ ws, asyncId }) {
+    const [data] = useNetmetrTest(ws, asyncId);
+
     if (!data) return null;
+
     return (
         <>
             <h4 className="text-center">
@@ -28,7 +30,9 @@ export default function TestProgress({ ws }) {
                     aria-valuemin="0"
                     aria-valuemax="100"
                     style={{ width: `${data.percent}%` }}
-                />
+                >
+                    {data.msg}
+                </div>
             </div>
         </>
     );
