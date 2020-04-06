@@ -9,6 +9,23 @@
 // It should be passed as ForisForm child.
 
 import { useEffect } from "react";
+import PropTypes from "prop-types";
+
+SyncCodeSetter.propTypes = {
+    formData: PropTypes.shape({
+        autostart_enabled: PropTypes.bool.isRequired,
+        hours_to_run: PropTypes.arrayOf(PropTypes.number).isRequired,
+    }).isRequired,
+    setFormValue: PropTypes.func.isRequired,
+};
+
+SyncCodeSetter.defaultProps = {
+    formData: {
+        autostart_enabled: false,
+        hours_to_run: [],
+    },
+    setFormValue: () => {},
+};
 
 export default function SyncCodeSetter({ formData, setSyncCode }) {
     useEffect(() => {

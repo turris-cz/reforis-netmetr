@@ -6,6 +6,7 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 
 import "./AutostartHourButtons.css";
 import { Button } from "foris";
@@ -13,7 +14,16 @@ import AutostartHourButton from "./AutostartHourButton";
 import useAutostartHours from "./hooks";
 import { ALL_HOURS } from "./constants";
 
-export default function AutostartHoursButtons({ formData, setFormValue }) {
+AutostartHoursButtons.propTypes = {
+    formData: PropTypes.shape({
+        autostart_enabled: PropTypes.bool.isRequired,
+        hours_to_run: PropTypes.arrayOf(PropTypes.number).isRequired,
+    }).isRequired,
+    setFormValue: PropTypes.func.isRequired,
+    disabled: PropTypes.bool,
+};
+
+export default function AutostartHoursButtons({ formData, setFormValue, disabled }) {
     const [
         toggleHour,
         selectAllHours,
@@ -26,12 +36,14 @@ export default function AutostartHoursButtons({ formData, setFormValue }) {
                 <Button
                     className="btn-sm btn-outline-info "
                     onClick={selectAllHours}
+                    disabled={disabled}
                 >
                     {_("Select all")}
                 </Button>
                 <Button
                     className="btn-sm btn-outline-info"
                     onClick={unselectAllHours}
+                    disabled={disabled}
                 >
                     {_("Unselect all")}
                 </Button>
@@ -44,6 +56,7 @@ export default function AutostartHoursButtons({ formData, setFormValue }) {
                             hour_to_run={hour}
                             checked={formData.hours_to_run.includes(hour)}
                             onClick={() => toggleHour(hour)}
+                            disabled={disabled}
                         />
                     ),
                 )}

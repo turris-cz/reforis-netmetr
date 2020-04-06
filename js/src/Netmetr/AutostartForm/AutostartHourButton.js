@@ -7,10 +7,15 @@
 
 import React from "react";
 import { toLocaleDateString } from "foris";
-
 import { useUID } from "react-uid";
+import PropTypes from "prop-types";
 
 import "./AutostartHourButton.css";
+
+AutostartHourButton.propTypes = {
+    hour_to_run: PropTypes.number.isRequired,
+    checked: PropTypes.bool.isRequired,
+};
 
 export default function AutostartHourButton({ hour_to_run, checked, ...props }) {
     const uid = useUID();

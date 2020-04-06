@@ -6,6 +6,7 @@
  */
 
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { ForisForm } from "foris";
 
 import API_URLs from "API";
@@ -17,6 +18,10 @@ import LinkToMyNetmetr from "./LinkToMyNetmetr";
 import TestProgress from "./TestProgress/TestProgress";
 import useNetmetrAlerts from "./hooks";
 
+Netmetr.propTypes = {
+    ws: PropTypes.object.isRequired,
+};
+
 export default function Netmetr({ ws }) {
     const [syncCode, setSyncCode] = useState(null);
     const [asyncIdSpeedTest, setAsyncIdSpeedTest] = useState(null);
@@ -26,8 +31,8 @@ export default function Netmetr({ ws }) {
 
     return (
         <>
-            <h1>Netmetr</h1>
-            <p>{_("Netmeter measures your internet parameters like upload, download and response time.")}</p>
+            <h1>{_("NetMetr")}</h1>
+            <p>{_("NetMeter measures your internet parameters like upload, download and response time.")}</p>
             <ForisForm
                 ws={ws}
                 forisConfig={{

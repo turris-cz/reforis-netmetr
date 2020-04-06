@@ -6,8 +6,13 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 
 import { NETMETR_MY_URL } from "./constants";
+
+LinkToMyNetmetr.propTypes = {
+    syncCode: PropTypes.string.isRequired,
+};
 
 export default function LinkToMyNetmetr({ syncCode }) {
     return (

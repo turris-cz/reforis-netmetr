@@ -6,9 +6,17 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 import { Button } from "foris";
 
 import { useStartTest } from "./hooks";
+
+StartTestButton.propTypes = {
+    ws: PropTypes.object.isRequired,
+
+    asyncId: PropTypes.string,
+    setAsyncId: PropTypes.func.isRequired,
+};
 
 export default function StartTestButton({ ws, asyncId, setAsyncId }) {
     const [onClickHandler, isLoading] = useStartTest(ws, asyncId, setAsyncId);

@@ -6,9 +6,14 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 
 import ResultsTableWithErrorAndSpinner from "./ResultsTable";
 import useNetmetrResults from "./hooks";
+
+Results.propTypes = {
+    ws: PropTypes.object.isRequired,
+};
 
 export default function Results({ ws }) {
     const [data] = useNetmetrResults(ws);

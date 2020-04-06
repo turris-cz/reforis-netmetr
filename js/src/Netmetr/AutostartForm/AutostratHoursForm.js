@@ -6,10 +6,21 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
+
 import AutostartHoursButtons from "./AutostartHoursButtons";
 
+AutostartHoursForm.propTypes = {
+    formData: PropTypes.shape({
+        autostart_enabled: PropTypes.bool.isRequired,
+        hours_to_run: PropTypes.arrayOf(PropTypes.number).isRequired,
+    }).isRequired,
+    setFormValue: PropTypes.func.isRequired,
+    disabled: PropTypes.bool,
+};
+
 export default function AutostartHoursForm({
-    formData, formErrors, setFormValue, disabled,
+    formData, setFormValue, disabled,
 }) {
     return (
         <>
@@ -17,6 +28,7 @@ export default function AutostartHoursForm({
             <AutostartHoursButtons
                 formData={formData}
                 setFormValue={setFormValue}
+                disabled={disabled}
             />
         </>
     );

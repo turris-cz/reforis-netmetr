@@ -7,11 +7,29 @@
 
 import React from "react";
 import { CheckBox } from "foris";
+import PropTypes from "prop-types";
 
 import AutostartHoursForm from "./AutostratHoursForm";
 
+AutostartForm.propTypes = {
+    formData: PropTypes.shape({
+        autostart_enabled: PropTypes.bool,
+        hours_to_run: PropTypes.arrayOf(PropTypes.number),
+    }).isRequired,
+    setFormValue: PropTypes.func.isRequired,
+    disabled: PropTypes.bool,
+};
+
+AutostartForm.defaultProps = {
+    formData: {
+        autostart_enabled: false,
+        hours_to_run: [],
+    },
+    setFormValue: () => {},
+};
+
 export default function AutostartForm({
-    formData, formErrors, setFormValue, disabled,
+    formData, setFormValue, disabled,
 }) {
     return (
         <>

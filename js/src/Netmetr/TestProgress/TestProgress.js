@@ -6,9 +6,15 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 
 import useNetmetrTest from "./hooks";
 import "./TestProgress.css";
+
+TestProgress.propTypes = {
+    ws: PropTypes.object.isRequired,
+    asyncId: PropTypes.string,
+};
 
 export default function TestProgress({ ws, asyncId }) {
     const [data] = useNetmetrTest(ws, asyncId);

@@ -6,9 +6,17 @@
  */
 
 import React from "react";
+import PropTypes from "prop-types";
 import { Button } from "foris";
 
 import { useRedownloadData } from "./hooks";
+
+RedownloadDataButton.propTypes = {
+    ws: PropTypes.object.isRequired,
+
+    asyncId: PropTypes.string,
+    setAsyncId: PropTypes.func.isRequired,
+};
 
 export default function RedownloadDataButton({ ws, asyncId, setAsyncId }) {
     const [onClickHandler, isLoading] = useRedownloadData(ws, asyncId, setAsyncId);

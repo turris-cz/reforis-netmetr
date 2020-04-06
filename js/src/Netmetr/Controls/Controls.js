@@ -8,8 +8,19 @@
 import React from "react";
 
 import "./Controls.css";
+import PropTypes from "prop-types";
 import RedownloadDataButton from "./RedownloadDataButton";
 import StartTestButton from "./StartTestButton";
+
+Controls.propTypes = {
+    ws: PropTypes.object.isRequired,
+
+    asyncIdSpeedTest: PropTypes.string,
+    setAsyncIdSpeedTest: PropTypes.func.isRequired,
+
+    asyncIdRedownloadData: PropTypes.string,
+    setAsyncIdRedownloadData: PropTypes.func.isRequired,
+};
 
 export default function Controls({
     ws,
