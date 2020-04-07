@@ -37,11 +37,12 @@ def get_settings():
 
 @blueprint.route('/settings', methods=['POST'])
 def post_settings():
+    validate_json(request.json, {'autostart_enabled': bool, 'hours_to_run': list})
     response = current_app.backend.perform('netmetr', 'update_settings', request.json)
     if response.get('result') is not True:
         raise APIError(_('Cannot update netmetr settings.'), HTTPStatus.INTERNAL_SERVER_ERROR)
 
-    return jsonify(response), HTTPStatus.CREATED
+    return jsonify(response), HTTPStatus.OK
 
 
 @blueprint.route('/data', methods=['GET'])
@@ -51,9 +52,9 @@ def get_data():
 
 @blueprint.route('/trigger-download-data', methods=['POST'])
 def trigger_download_data():
-    return jsonify(current_app.backend.perform('netmetr', 'download_data'))
+    return jsonify(current_app.backend.perform('netmetr', 'download_data')), HTTPStatus.OK
 
 
 @blueprint.route('/trigger-measure-speed-and-download-data', methods=['POST'])
 def trigger_measure_speed_and_download_data():
-    return jsonify(current_app.backend.perform('netmetr', 'measure_and_download_data'))
+    return jsonify(current_app.backend.perform('netmetr', 'measure_and_download_data')), HTTPStatus.OK
