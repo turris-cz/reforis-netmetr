@@ -1,5 +1,5 @@
-# reForis Netmetr plugin
-See [Netmetr web page](https://www.netmetr.cz/) to learn more about netmetr.
+# reForis NetMetr plugin
+See [NetMetr web page](https://www.netmetr.cz/) to learn more about netmetr.
 
 ## reForis Plugin system
 To learn more about the plugin system see documentation of [reForis](https://gitlab.labs.nic.cz/turris/reforis).

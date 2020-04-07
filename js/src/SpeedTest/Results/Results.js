@@ -10,17 +10,25 @@ import PropTypes from "prop-types";
 
 import ResultsTableWithErrorAndSpinner from "./ResultsTable";
 import useNetmetrResults from "./hooks";
+import RedownloadDataButton from "../ControlButtons/RedownloadDataButton";
 
 Results.propTypes = {
     ws: PropTypes.object.isRequired,
+    asyncIdRedownloadData: PropTypes.string,
+    setAsyncIdRedownloadData: PropTypes.func.isRequired,
 };
 
-export default function Results({ ws }) {
+export default function Results({ ws, asyncIdRedownloadData, setAsyncIdRedownloadData }) {
     const [data] = useNetmetrResults(ws);
 
     return (
         <>
             <h3>{_("Results")}</h3>
+            <RedownloadDataButton
+                ws={ws}
+                asyncId={asyncIdRedownloadData}
+                setAsyncId={setAsyncIdRedownloadData}
+            />
             <ResultsTableWithErrorAndSpinner
                 apiState={data.state}
                 performed_tests={(data.data || {}).performed_tests}

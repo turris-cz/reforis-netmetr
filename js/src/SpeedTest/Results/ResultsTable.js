@@ -23,7 +23,7 @@ ResultsTable.propTypes = {
 
 function ResultsTable({ performed_tests }) {
     return (
-        <table className="table text-center">
+        <table className="table table-hover text-center">
             <thead>
                 <tr>
                     <th scope="col">{_("Date and Time")}</th>

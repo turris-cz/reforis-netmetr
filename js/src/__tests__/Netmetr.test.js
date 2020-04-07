@@ -9,11 +9,11 @@ import React from "react";
 import mockAxios from "jest-mock-axios";
 import { render } from "foris/testUtils/customTestRender";
 
-import Netmetr from "../Netmetr";
+import NetMetr from "../NetMetr";
 
 describe("<Netmetr />", () => {
     it("should render component", () => {
-        const { getByText } = render(<Netmetr />);
+        const { getByText } = render(<NetMetr />);
         expect(getByText("Netmetr")).toBeDefined();
         expect(mockAxios.get).toBeCalledWith("/reforis/netmetr/api/example", expect.anything());
     });

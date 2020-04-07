@@ -7,14 +7,25 @@
 
 import React from "react";
 
-import Netmetr from "./Netmetr/Netmetr";
-import NetmetrIcon from "./Netmetr/NetmetrIcon";
+import SpeedTest from "./SpeedTest/SpeedTest";
+import Settings from "./Settings/Settings";
+import NetmetrIcon from "./NetmetrIcon";
 
 const NetmetrPlugin = {
     name: _("Netmetr"),
     weight: 65,
     path: "/netmetr",
-    component: Netmetr,
+    pages: [
+        {
+            path: "/speed-test",
+            name: _("Speed Test"),
+            component: SpeedTest,
+        }, {
+            path: "/settings",
+            name: _("Autostart Settings"),
+            component: Settings,
+        },
+    ],
     icon: <NetmetrIcon />,
 };
 
