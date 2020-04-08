@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RedownloadDataButton /> Should not react on different asyncId in WS message. 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <DocumentFragment>
+    <button
+      class=\\"btn btn-outline-info btn-sm\\"
++     disabled=\\"\\"
+      id=\\"redownload-data-button\\"
+      type=\\"button\\"
+    >
+-       Redownload data
++     <span
++       aria-hidden=\\"true\\"
++       class=\\"spinner-border spinner-border-sm\\"
++       role=\\"status\\"
++     />
++        Redownload data
+    </button>
+  </DocumentFragment>"
+`;
+
+exports[`<RedownloadDataButton /> Should render component. 1`] = `
+<DocumentFragment>
+  <button
+    class="btn btn-outline-info btn-sm"
+    id="redownload-data-button"
+    type="button"
+  >
+      Redownload data
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<RedownloadDataButton /> Should show spinner on click. 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <DocumentFragment>
+    <button
+      class=\\"btn btn-outline-info btn-sm\\"
++     disabled=\\"\\"
+      id=\\"redownload-data-button\\"
+      type=\\"button\\"
+    >
+-       Redownload data
++     <span
++       aria-hidden=\\"true\\"
++       class=\\"spinner-border spinner-border-sm\\"
++       role=\\"status\\"
++     />
++        Redownload data
+    </button>
+  </DocumentFragment>"
+`;
+
+exports[`<RedownloadDataButton /> Should stop show spinner after WS message. 1`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;

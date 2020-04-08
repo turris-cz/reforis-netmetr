@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Results /> Should be hidden when speed test is finished. 1`] = `<DocumentFragment />`;
+
+exports[`<Results /> Should not be shown at the beginning. 1`] = `<DocumentFragment />`;
+
+exports[`<Results /> Should render component when test is started. 1`] = `
+<DocumentFragment>
+  <h6
+    class="text-center"
+  >
+    Test progress
+  </h6>
+  <div
+    class="progress"
+  >
+    <div
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="5"
+      class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+      id="progressbar"
+      role="progressbar"
+      style="width: 5%;"
+    >
+      ping start
+    </div>
+  </div>
+</DocumentFragment>
+`;
