@@ -5,15 +5,28 @@
  * See /LICENSE for more information.
  */
 
-import Netmetr from "./Netmetr/Netmetr";
+import React from "react";
+
+import SpeedTest from "./SpeedTest/SpeedTest";
+import Settings from "./Settings/Settings";
+import NetmetrIcon from "./NetmetrIcon";
 
 const NetmetrPlugin = {
     name: _("Netmetr"),
-    weight: 100,
-    submenuId: "netmetr",
+    weight: 65,
     path: "/netmetr",
-    component: Netmetr,
-    icon: "cube",
+    pages: [
+        {
+            path: "/speed-test",
+            name: _("Speed Test"),
+            component: SpeedTest,
+        }, {
+            path: "/settings",
+            name: _("Autostart Settings"),
+            component: Settings,
+        },
+    ],
+    icon: <NetmetrIcon />,
 };
 
 ForisPlugins.push(NetmetrPlugin);

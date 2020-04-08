@@ -56,6 +56,7 @@ prepare-dev:
 	make venv
 
 install:
+	opkg install foris-controller-netmetr-module
 	$(PYTHON) -m pip install -e .
 	ln -sf /tmp/reforis-netmetr/reforis_static/reforis_netmetr /tmp/reforis/reforis_static/
 	/etc/init.d/lighttpd restart

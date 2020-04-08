@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StartTestButton /> Should not react on different asyncId in WS message. 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <DocumentFragment>
+    <button
+      class=\\"btn btn btn-primary col-sm-12\\"
++     disabled=\\"\\"
+      id=\\"start-test-button\\"
+      type=\\"button\\"
+    >
+-       Start test
++     <span
++       aria-hidden=\\"true\\"
++       class=\\"spinner-border spinner-border-sm\\"
++       role=\\"status\\"
++     />
++        Start test
+    </button>
+  </DocumentFragment>"
+`;
+
+exports[`<StartTestButton /> Should render component. 1`] = `
+<DocumentFragment>
+  <button
+    class="btn btn btn-primary col-sm-12"
+    id="start-test-button"
+    type="button"
+  >
+      Start test
+  </button>
+</DocumentFragment>
+`;
+
+exports[`<StartTestButton /> Should show spinner on click. 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <DocumentFragment>
+    <button
+      class=\\"btn btn btn-primary col-sm-12\\"
++     disabled=\\"\\"
+      id=\\"start-test-button\\"
+      type=\\"button\\"
+    >
+-       Start test
++     <span
++       aria-hidden=\\"true\\"
++       class=\\"spinner-border spinner-border-sm\\"
++       role=\\"status\\"
++     />
++        Start test
+    </button>
+  </DocumentFragment>"
+`;
+
+exports[`<StartTestButton /> Should stop show spinner after WS message. 1`] = `
+"Snapshot Diff:
+Compared values have no visual difference."
+`;

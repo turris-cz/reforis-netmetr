@@ -6,7 +6,9 @@
   "description": "",
   "main": "./src/app.js",
   "dependencies": {
-    "foris": "beta"
+    "foris": "^4.5.0",
+    "react-uid": "^2.2.0",
+    "moment": "^2.24.0"
   },
   "peerDependencies": {
     "prop-types": "15.7.2",
@@ -32,6 +34,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-router-dom": "5.1.2",
+    "snapshot-diff": "^0.7.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
