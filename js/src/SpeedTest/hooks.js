@@ -5,8 +5,8 @@
  * See /LICENSE for more information.
  */
 
-import {useEffect} from "react";
-import {ALERT_TYPES, useAlert, useWSForisModule,} from "foris";
+import { useEffect } from "react";
+import { ALERT_TYPES, useAlert, useWSForisModule } from "foris";
 
 export default function useNetmetrAlerts(ws) {
     const [setAlert] = useAlert();
@@ -33,4 +33,3 @@ export default function useNetmetrAlerts(ws) {
         }
     }, [measureAndDownloadDataFinishedData, setAlert]);
 }
-
