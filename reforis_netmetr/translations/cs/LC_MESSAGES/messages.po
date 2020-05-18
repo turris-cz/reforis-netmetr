@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-04-08 20:48+0200\n"
-"PO-Revision-Date: 2020-05-05 15:11+0000\n"
+"PO-Revision-Date: 2020-05-19 15:41+0000\n"
 "Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "reforis-netmetr-plugin/cs/>\n"
@@ -50,7 +50,7 @@ msgstr "Automatické spouštění"
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:38
 msgid "Enabled"
-msgstr ""
+msgstr "Zapnuto"
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:41
 msgid "Select all"
