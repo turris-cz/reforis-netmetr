@@ -8,123 +8,132 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-04-08 20:48+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-05-25 09:41+0000\n"
+"Last-Translator: Eduardo Cuthbert <elguber@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/"
+"reforis-netmetr-plugin/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/NetMetr.js:21
+#, fuzzy
 msgid "NetMetr"
-msgstr ""
+msgstr "NetMetr"
 
 #: js/src/NetMetr.js:22
 msgid ""
 "NetMeter measures your internet parameters like upload, download and "
 "response time."
 msgstr ""
+"NetMeter mide sus parametros de internet como subida, bajada y tiempo de "
+"respuesta."
 
 #: js/src/app.js:15
 msgid "Netmetr"
-msgstr ""
+msgstr "Netmetr"
 
 #: js/src/SpeedTest/SpeedTest.js:36 js/src/app.js:21
 msgid "Speed Test"
-msgstr ""
+msgstr "Test de velocidad"
 
 #: js/src/app.js:25
 msgid "Autostart Settings"
-msgstr ""
+msgstr "Opciones de inicio automàtico"
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:36
 msgid "Autostart"
-msgstr ""
+msgstr "Inicio automàtico"
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:38
 msgid "Enabled"
-msgstr ""
+msgstr "Activado"
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:41
 msgid "Select all"
-msgstr ""
+msgstr "Seleccionar todo"
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:48
 msgid "Unselect all"
-msgstr ""
+msgstr "Deseleccionar todo"
 
 #: js/src/Settings/AutostartForm/AutostratHoursForm.js:27
 msgid "Select autostart hours"
-msgstr ""
+msgstr "Seleccionar horas de inicio automàtico"
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
 "For more information you need to enter your sync code "
 "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\">here</a>."
 msgstr ""
+"Para mas informaciòn, necesita introducior su còdigo de sincronizaciòn "
+"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\">aquì</a>."
 
 #: js/src/SpeedTest/hooks.js:18
 msgid "Data downloaded successfully."
-msgstr ""
+msgstr "Descarga de datos satisfactoria."
 
 #: js/src/SpeedTest/hooks.js:20
 msgid "Data downloading failed."
-msgstr ""
+msgstr "Descarga de datos fallida."
 
 #: js/src/SpeedTest/hooks.js:29
 msgid "Speed test finished successfully."
-msgstr ""
+msgstr "Test de velocidad finalizado satisfactoriamente."
 
 #: js/src/SpeedTest/hooks.js:31
 msgid "Speed test failed."
-msgstr ""
+msgstr "Test de velocidad fallido."
 
 #: js/src/SpeedTest/ControlButtons/RedownloadDataButton.js:33
 msgid "Redownload data"
-msgstr ""
+msgstr "Volver a descargar datos"
 
 #: js/src/SpeedTest/ControlButtons/StartTestButton.js:34
 msgid "Start test"
-msgstr ""
+msgstr "Comenzar el test"
 
 #: js/src/SpeedTest/Results/Results.js:26
 msgid "Results"
-msgstr ""
+msgstr "Resultados"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:29
 msgid "Date and Time"
-msgstr ""
+msgstr "Fecha y hora"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:30
 msgid "Download [Mb/s]"
-msgstr ""
+msgstr "Descarga [Mb/s]"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:31
 msgid "Upload [Mb/s]"
-msgstr ""
+msgstr "Subida [Mb/s]"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:32
+#, fuzzy
 msgid "Ping [ms]"
-msgstr ""
+msgstr "Ping [ms]"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:33
 msgid "Link"
-msgstr ""
+msgstr "Enlace"
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:34
 msgid "N/A"
-msgstr ""
+msgstr "No disponible"
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:37
 msgid "Details"
-msgstr ""
+msgstr "Detalles"
 
 #: js/src/SpeedTest/TestProgress/TestProgress.js:27
 msgid "Test progress"
-msgstr ""
+msgstr "Progreso del test"
 
 #: reforis_netmetr/__init__.py:43
 msgid "Cannot update netmetr settings."
-msgstr ""
+msgstr "No se pueden actualizar las opciones de netmetr"
