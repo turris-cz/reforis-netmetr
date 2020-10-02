@@ -8,11 +8,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./AutostartHourButtons.css";
 import { Button } from "foris";
 import AutostartHourButton from "./AutostartHourButton";
 import useAutostartHours from "./hooks";
 import { ALL_HOURS } from "./constants";
+
+import "./AutostartHourButtons.css";
 
 AutostartHoursButtons.propTypes = {
     formData: PropTypes.shape({

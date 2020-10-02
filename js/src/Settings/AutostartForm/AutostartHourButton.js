@@ -32,7 +32,9 @@ export default function AutostartHourButton({
     return (
         <label
             htmlFor={uid}
-            className={`btn btn-outline-light ${checked ? "active " : ""}`}
+            className={`btn btn-outline-secondary ${
+                checked ? "active " : ""
+            }`.trim()}
         >
             {createdAt}
             <input id={uid} type="checkbox" autoComplete="off" {...props} />
