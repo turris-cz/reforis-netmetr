@@ -6,7 +6,7 @@
  */
 
 import React from "react";
-import { CheckBox } from "foris";
+import { Switch } from "foris";
 import PropTypes from "prop-types";
 
 import AutostartHoursForm from "./AutostratHoursForm";
@@ -32,7 +32,7 @@ export default function AutostartForm({ formData, setFormValue, disabled }) {
     return (
         <>
             <h2>{_("Autostart")}</h2>
-            <CheckBox
+            <Switch
                 label={_("Enabled")}
                 checked={formData.autostart_enabled}
                 onChange={setFormValue((value) => ({
