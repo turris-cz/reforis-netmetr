@@ -33,27 +33,31 @@ export default function SpeedTest({ ws }) {
 
     return (
         <NetMetr>
-            <h2>{_("Speed Test")}</h2>
-            <div className="row">
-                <div className="col-lg-3 col-sm-12">
-                    <StartTestButton
-                        ws={ws}
-                        asyncId={asyncIdSpeedTest}
-                        setAsyncId={setAsyncIdSpeedTest}
+            <div className="card p-4">
+                <h2>{_("Speed Test")}</h2>
+                <div className="row mb-2">
+                    <div className="col-12 col-md-4 col-lg-2">
+                        <StartTestButton
+                            ws={ws}
+                            asyncId={asyncIdSpeedTest}
+                            setAsyncId={setAsyncIdSpeedTest}
+                        />
+                    </div>
+                    <div className="col-12 col-md-8 col-lg-10">
+                        <TestProgress ws={ws} asyncId={asyncIdSpeedTest} />
+                    </div>
+                </div>
+                <Results
+                    ws={ws}
+                    asyncIdRedownloadData={asyncIdRedownloadData}
+                    setAsyncIdRedownloadData={setAsyncIdRedownloadData}
+                />
+                {getSettingsState.data && (
+                    <LinkToMyNetmetr
+                        syncCode={getSettingsState.data.sync_code}
                     />
-                </div>
-                <div className="col-lg-9 col-sm-12">
-                    <TestProgress ws={ws} asyncId={asyncIdSpeedTest} />
-                </div>
+                )}
             </div>
-            <Results
-                ws={ws}
-                asyncIdRedownloadData={asyncIdRedownloadData}
-                setAsyncIdRedownloadData={setAsyncIdRedownloadData}
-            />
-            {getSettingsState.data && (
-                <LinkToMyNetmetr syncCode={getSettingsState.data.sync_code} />
-            )}
         </NetMetr>
     );
 }
