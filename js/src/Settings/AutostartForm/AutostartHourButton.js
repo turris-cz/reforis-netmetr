@@ -17,7 +17,11 @@ AutostartHourButton.propTypes = {
     checked: PropTypes.bool.isRequired,
 };
 
-export default function AutostartHourButton({ hour_to_run, checked, ...props }) {
+export default function AutostartHourButton({
+    hour_to_run,
+    checked,
+    ...props
+}) {
     const uid = useUID();
 
     const createdAt = toLocaleDateString(hour_to_run, {
@@ -26,7 +30,10 @@ export default function AutostartHourButton({ hour_to_run, checked, ...props }) 
     });
 
     return (
-        <label htmlFor={uid} className={`btn btn-outline-light ${checked ? "active " : ""}`}>
+        <label
+            htmlFor={uid}
+            className={`btn btn-outline-light ${checked ? "active " : ""}`}
+        >
             {createdAt}
             <input id={uid} type="checkbox" autoComplete="off" {...props} />
         </label>

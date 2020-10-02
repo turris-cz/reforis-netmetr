@@ -22,7 +22,8 @@ ResultsTableRow.propTypes = {
 };
 
 export default function ResultsTableRow({ performed_test }) {
-    const time = moment.unix(performed_test.time)
+    const time = moment
+        .unix(performed_test.time)
         .locale(ForisTranslations.locale)
         .format("l LT");
 

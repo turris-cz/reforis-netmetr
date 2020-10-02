@@ -23,9 +23,7 @@ export default function TestProgress({ ws, asyncId }) {
 
     return (
         <>
-            <h6 className="text-center">
-                {_("Test progress")}
-            </h6>
+            <h6 className="text-center">{_("Test progress")}</h6>
             <div className="progress">
                 {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
                 <div

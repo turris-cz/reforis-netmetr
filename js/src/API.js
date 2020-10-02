@@ -14,11 +14,12 @@ const API_URLs = new Proxy(
         settings: "settings",
         data: "data",
         triggerDownloadData: "trigger-download-data",
-        triggerMeasureSpeedAndDownloadData: "trigger-measure-speed-and-download-data",
+        triggerMeasureSpeedAndDownloadData:
+            "trigger-measure-speed-and-download-data",
     },
     {
         get: (target, name) => `${API_URL_PREFIX}${target[name]}`,
-    },
+    }
 );
 
 export default API_URLs;

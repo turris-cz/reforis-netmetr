@@ -6,15 +6,15 @@
  */
 
 import React from "react";
-import {render} from "foris/testUtils/customTestRender";
+import { render } from "foris/testUtils/customTestRender";
 
-import AutostartForm from '../AutostartForm';
-import autostartFixture from '../../__tests__/__fixtures__/autostart';
+import AutostartForm from "../AutostartForm";
+import autostartFixture from "../../__tests__/__fixtures__/autostart";
 
 describe("<AutostartForm />", () => {
     it("should render component", () => {
         const setFormValue = jest.fn(() => jest.fn());
-        const {getByText, container} = render(
+        const { getByText, container } = render(
             <AutostartForm
                 formData={autostartFixture}
                 setFormValue={setFormValue}

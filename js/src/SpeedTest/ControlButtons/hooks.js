@@ -13,38 +13,48 @@ import API_URLs from "API";
 export function useStartTest(ws, asyncId, setAsyncId) {
     return useControl(
         ws,
-        asyncId, setAsyncId,
+        asyncId,
+        setAsyncId,
         API_URLs.triggerMeasureSpeedAndDownloadData,
-        "measure_and_download_data_finished",
+        "measure_and_download_data_finished"
     );
 }
 
 export function useRedownloadData(ws, asyncId, setAsyncId) {
     return useControl(
         ws,
-        asyncId, setAsyncId,
+        asyncId,
+        setAsyncId,
         API_URLs.triggerDownloadData,
-        "download_data_finished",
+        "download_data_finished"
     );
 }
 
 function useControl(ws, asyncId, setAsyncId, apiEndpoint, action) {
     const [isLoading, setIsLoading] = useState(false);
-    const [
-        triggerDownloadDataState,
-        triggerDownloadDataRequest,
-    ] = useAPIPost(apiEndpoint);
+    const [triggerDownloadDataState, triggerDownloadDataRequest] = useAPIPost(
+        apiEndpoint
+    );
 
     useEffect(() => {
-        if (triggerDownloadDataState.data && triggerDownloadDataState.data.async_id) {
+        if (
+            triggerDownloadDataState.data &&
+            triggerDownloadDataState.data.async_id
+        ) {
             setAsyncId(triggerDownloadDataState.data.async_id);
         }
     }, [setAsyncId, triggerDownloadDataState.data]);
 
-    const [measureAndDownloadDataFinishedData] = useWSForisModule(ws, "netmetr", action);
+    const [measureAndDownloadDataFinishedData] = useWSForisModule(
+        ws,
+        "netmetr",
+        action
+    );
     useEffect(() => {
-        if (measureAndDownloadDataFinishedData
-            && measureAndDownloadDataFinishedData.async_id === asyncId) {
+        if (
+            measureAndDownloadDataFinishedData &&
+            measureAndDownloadDataFinishedData.async_id === asyncId
+        ) {
             setIsLoading(false);
         }
     }, [asyncId, measureAndDownloadDataFinishedData]);

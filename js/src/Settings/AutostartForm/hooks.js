@@ -24,7 +24,9 @@ export default function useAutostartHours(hours, setFormValue) {
     }
 
     function deleteHour(hour) {
-        const hourIndex = hours.findIndex((currentHour) => currentHour === hour);
+        const hourIndex = hours.findIndex(
+            (currentHour) => currentHour === hour
+        );
         updateHours({ $splice: [[hourIndex, 1]] });
     }
 
@@ -37,9 +39,7 @@ export default function useAutostartHours(hours, setFormValue) {
     }
 
     function updateHours(updateRule) {
-        setFormValue(() => (
-            { hours_to_run: updateRule }
-        ))(fakeEvent);
+        setFormValue(() => ({ hours_to_run: updateRule }))(fakeEvent);
     }
 
     return [toggleHour, selectAllHours, unselectAllHours];

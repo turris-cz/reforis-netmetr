@@ -12,13 +12,15 @@ import { withErrorMessage, withSpinnerOnSending } from "foris";
 import ResultsTableRow from "./ResultsTableRow";
 
 ResultsTable.propTypes = {
-    performed_tests: PropTypes.arrayOf(PropTypes.shape({
-        test_uuid: PropTypes.string.isRequired,
-        time: PropTypes.number.isRequired,
-        speed_download: PropTypes.number.isRequired,
-        speed_upload: PropTypes.number.isRequired,
-        ping: PropTypes.number,
-    })).isRequired,
+    performed_tests: PropTypes.arrayOf(
+        PropTypes.shape({
+            test_uuid: PropTypes.string.isRequired,
+            time: PropTypes.number.isRequired,
+            speed_download: PropTypes.number.isRequired,
+            speed_upload: PropTypes.number.isRequired,
+            ping: PropTypes.number,
+        })
+    ).isRequired,
 };
 
 function ResultsTable({ performed_tests }) {
@@ -45,6 +47,8 @@ function ResultsTable({ performed_tests }) {
     );
 }
 
-const ResultsTableWithErrorAndSpinner = withSpinnerOnSending(withErrorMessage(ResultsTable));
+const ResultsTableWithErrorAndSpinner = withSpinnerOnSending(
+    withErrorMessage(ResultsTable)
+);
 
 export default ResultsTableWithErrorAndSpinner;

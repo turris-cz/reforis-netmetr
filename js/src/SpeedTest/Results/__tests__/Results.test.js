@@ -6,14 +6,13 @@
  */
 
 import React from "react";
-import {render, wait, act, fireEvent} from "foris/testUtils/customTestRender";
-import {WebSockets} from "foris";
+import { render, wait, act, fireEvent } from "foris/testUtils/customTestRender";
+import { WebSockets } from "foris";
 import diffSnapshot from "snapshot-diff";
 import mockAxios from "jest-mock-axios";
 
-import resultsFixture from './__fixtures__/results';
-import Results from '../Results';
-
+import resultsFixture from "./__fixtures__/results";
+import Results from "../Results";
 
 describe("<Results />", () => {
     const webSockets = new WebSockets();
@@ -24,10 +23,14 @@ describe("<Results />", () => {
     let firstRender;
 
     beforeEach(async () => {
-        ({container, asFragment, getByText} = render(
-            <Results ws={webSockets} setAsyncIdRedownloadData={setAsyncId} asyncIdRedownloadData={"test-async-id"}/>
+        ({ container, asFragment, getByText } = render(
+            <Results
+                ws={webSockets}
+                setAsyncIdRedownloadData={setAsyncId}
+                asyncIdRedownloadData={"test-async-id"}
+            />
         ));
-        mockAxios.mockResponse({data: resultsFixture});
+        mockAxios.mockResponse({ data: resultsFixture });
         await wait(() => getByText("Date and Time"));
 
         firstRender = asFragment();
@@ -40,30 +43,42 @@ describe("<Results />", () => {
     it("Should redownload data when speed test is finished.", () => {
         expect(mockAxios.get).toHaveBeenCalledTimes(1);
         // Simulate receiving message from WS server.
-        act(() => webSockets.dispatch({
-            module: "netmetr",
-            action: "measure_and_download_data_finished",
-            data: {
-                async_id: "test-async-id",
-                passed: true,
-            }
-        }));
+        act(() =>
+            webSockets.dispatch({
+                module: "netmetr",
+                action: "measure_and_download_data_finished",
+                data: {
+                    async_id: "test-async-id",
+                    passed: true,
+                },
+            })
+        );
         expect(mockAxios.get).toHaveBeenCalledTimes(2);
-        expect(mockAxios.get).toHaveBeenNthCalledWith(2, "/reforis/netmetr/api/data", expect.anything());
+        expect(mockAxios.get).toHaveBeenNthCalledWith(
+            2,
+            "/reforis/netmetr/api/data",
+            expect.anything()
+        );
     });
 
     it("Should redownload data when redownload is finished.", () => {
         expect(mockAxios.get).toHaveBeenCalledTimes(1);
         // Simulate receiving message from WS server.
-        act(() => webSockets.dispatch({
-            module: "netmetr",
-            action: "download_data_finished",
-            data: {
-                async_id: "test-async-id",
-                passed: true,
-            }
-        }));
+        act(() =>
+            webSockets.dispatch({
+                module: "netmetr",
+                action: "download_data_finished",
+                data: {
+                    async_id: "test-async-id",
+                    passed: true,
+                },
+            })
+        );
         expect(mockAxios.get).toHaveBeenCalledTimes(2);
-        expect(mockAxios.get).toHaveBeenNthCalledWith(2, "/reforis/netmetr/api/data", expect.anything());
+        expect(mockAxios.get).toHaveBeenNthCalledWith(
+            2,
+            "/reforis/netmetr/api/data",
+            expect.anything()
+        );
     });
 });

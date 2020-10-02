@@ -34,15 +34,15 @@ export default function SpeedTest({ ws }) {
     return (
         <NetMetr>
             <h2>{_("Speed Test")}</h2>
-            <div className='row'>
-                <div className='col-lg-3 col-sm-12'>
+            <div className="row">
+                <div className="col-lg-3 col-sm-12">
                     <StartTestButton
                         ws={ws}
                         asyncId={asyncIdSpeedTest}
                         setAsyncId={setAsyncIdSpeedTest}
                     />
                 </div>
-                <div className='col-lg-9 col-sm-12'>
+                <div className="col-lg-9 col-sm-12">
                     <TestProgress ws={ws} asyncId={asyncIdSpeedTest} />
                 </div>
             </div>

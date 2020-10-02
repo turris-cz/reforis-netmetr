@@ -12,16 +12,33 @@ export default function useNetmetrTest(ws, asyncId) {
     const [data, setData] = useState(null);
     const [setAlert] = useAlert();
 
-    const [measureAndDownloadData] = useWSForisModule(ws, "netmetr", "measure_and_download_data_notification");
+    const [measureAndDownloadData] = useWSForisModule(
+        ws,
+        "netmetr",
+        "measure_and_download_data_notification"
+    );
     useEffect(() => {
-        if (measureAndDownloadData && measureAndDownloadData.async_id === asyncId) {
-            setData((currentData) => ({ ...currentData, ...measureAndDownloadData }));
+        if (
+            measureAndDownloadData &&
+            measureAndDownloadData.async_id === asyncId
+        ) {
+            setData((currentData) => ({
+                ...currentData,
+                ...measureAndDownloadData,
+            }));
         }
     }, [asyncId, measureAndDownloadData]);
 
-    const [measureAndDownloadDataFinished] = useWSForisModule(ws, "netmetr", "measure_and_download_data_finished");
+    const [measureAndDownloadDataFinished] = useWSForisModule(
+        ws,
+        "netmetr",
+        "measure_and_download_data_finished"
+    );
     useEffect(() => {
-        if (measureAndDownloadDataFinished && measureAndDownloadDataFinished.async_id === asyncId) {
+        if (
+            measureAndDownloadDataFinished &&
+            measureAndDownloadDataFinished.async_id === asyncId
+        ) {
             setData(() => null);
         }
     }, [asyncId, measureAndDownloadDataFinished, setAlert]);

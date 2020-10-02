@@ -20,7 +20,11 @@ RedownloadDataButton.propTypes = {
 };
 
 export default function RedownloadDataButton({ ws, asyncId, setAsyncId }) {
-    const [onClickHandler, isLoading] = useRedownloadData(ws, asyncId, setAsyncId);
+    const [onClickHandler, isLoading] = useRedownloadData(
+        ws,
+        asyncId,
+        setAsyncId
+    );
 
     return (
         <Button

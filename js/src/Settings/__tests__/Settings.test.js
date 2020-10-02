@@ -6,8 +6,8 @@
  */
 
 import React from "react";
-import {render, wait, fireEvent} from "foris/testUtils/customTestRender";
-import {WebSockets} from "foris";
+import { render, wait, fireEvent } from "foris/testUtils/customTestRender";
+import { WebSockets } from "foris";
 import diffSnapshot from "snapshot-diff";
 import mockAxios from "jest-mock-axios";
 
@@ -22,10 +22,10 @@ describe("<Settings />", () => {
 
     beforeEach(async () => {
         const webSockets = new WebSockets();
-        ({container, asFragment, getByText} = render(
-            <Settings ws={webSockets}/>
+        ({ container, asFragment, getByText } = render(
+            <Settings ws={webSockets} />
         ));
-        mockAxios.mockResponse({data: autostartFixture});
+        mockAxios.mockResponse({ data: autostartFixture });
         await wait(() => getByText("NetMetr"));
         firstRender = asFragment();
     });
@@ -48,8 +48,11 @@ describe("<Settings />", () => {
             autostart_enabled: false,
             hours_to_run: [0, 1, 2, 3, 4],
         };
-        expect(mockAxios.post)
-            .toHaveBeenCalledWith("/reforis/netmetr/api/settings", data, expect.anything());
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            "/reforis/netmetr/api/settings",
+            data,
+            expect.anything()
+        );
     });
 
     it("Should enable hours.", () => {
@@ -68,7 +71,10 @@ describe("<Settings />", () => {
             autostart_enabled: true,
             hours_to_run: [0, 1, 2, 3, 4, 7, 12],
         };
-        expect(mockAxios.post)
-            .toHaveBeenCalledWith("/reforis/netmetr/api/settings", data, expect.anything());
+        expect(mockAxios.post).toHaveBeenCalledWith(
+            "/reforis/netmetr/api/settings",
+            data,
+            expect.anything()
+        );
     });
 });

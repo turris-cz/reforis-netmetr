@@ -6,9 +6,8 @@
  */
 
 const autostartFixture = {
-    "autostart_enabled": true,
-    "hours_to_run": [0, 1, 2, 3, 4],
-
+    autostart_enabled: true,
+    hours_to_run: [0, 1, 2, 3, 4],
 };
 
 export default autostartFixture;
