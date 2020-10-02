@@ -18,12 +18,16 @@ Results.propTypes = {
     setAsyncIdRedownloadData: PropTypes.func.isRequired,
 };
 
-export default function Results({ ws, asyncIdRedownloadData, setAsyncIdRedownloadData }) {
+export default function Results({
+    ws,
+    asyncIdRedownloadData,
+    setAsyncIdRedownloadData,
+}) {
     const [data] = useNetmetrResults(ws);
 
     return (
         <>
-            <h3>{_("Results")}</h3>
+            <h2>{_("Results")}</h2>
             <RedownloadDataButton
                 ws={ws}
                 asyncId={asyncIdRedownloadData}

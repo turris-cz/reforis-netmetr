@@ -33,16 +33,16 @@ export default function SpeedTest({ ws }) {
 
     return (
         <NetMetr>
-            <h3>{_("Speed Test")}</h3>
-            <div className="row">
-                <div className="col-lg-3 col-sm-12">
+            <h2>{_("Speed Test")}</h2>
+            <div className='row'>
+                <div className='col-lg-3 col-sm-12'>
                     <StartTestButton
                         ws={ws}
                         asyncId={asyncIdSpeedTest}
                         setAsyncId={setAsyncIdSpeedTest}
                     />
                 </div>
-                <div className="col-lg-9 col-sm-12">
+                <div className='col-lg-9 col-sm-12'>
                     <TestProgress ws={ws} asyncId={asyncIdSpeedTest} />
                 </div>
             </div>
@@ -51,8 +51,9 @@ export default function SpeedTest({ ws }) {
                 asyncIdRedownloadData={asyncIdRedownloadData}
                 setAsyncIdRedownloadData={setAsyncIdRedownloadData}
             />
-            {getSettingsState.data
-                && <LinkToMyNetmetr syncCode={getSettingsState.data.sync_code} />}
+            {getSettingsState.data && (
+                <LinkToMyNetmetr syncCode={getSettingsState.data.sync_code} />
+            )}
         </NetMetr>
     );
 }

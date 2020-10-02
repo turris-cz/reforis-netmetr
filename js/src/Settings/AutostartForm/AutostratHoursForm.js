@@ -20,11 +20,13 @@ AutostartHoursForm.propTypes = {
 };
 
 export default function AutostartHoursForm({
-    formData, setFormValue, disabled,
+    formData,
+    setFormValue,
+    disabled,
 }) {
     return (
         <>
-            <h4>{_("Select autostart hours")}</h4>
+            <h3>{_("Select autostart hours")}</h3>
             <AutostartHoursButtons
                 formData={formData}
                 setFormValue={setFormValue}
