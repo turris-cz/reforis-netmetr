@@ -27,6 +27,7 @@ export default function Settings({ ws }) {
                     wsModule: "netmetr",
                 }}
                 prepDataToSubmit={prepDataToSubmit}
+                validator={validator}
             >
                 <AutostartForm />
             </ForisForm>
@@ -37,4 +38,12 @@ export default function Settings({ ws }) {
 function prepDataToSubmit(data) {
     delete data.sync_code;
     return data;
+}
+
+function validator(formData) {
+    const error = {};
+    if (formData.autostart_enabled && formData.hours_to_run.length === 0) {
+        error.hours_to_run = "Hours must be selected";
+    }
+    return error.hours_to_run ? error : undefined;
 }
