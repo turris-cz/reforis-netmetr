@@ -29,7 +29,7 @@ export default function RedownloadDataButton({ ws, asyncId, setAsyncId }) {
     return (
         <Button
             id="redownload-data-button"
-            className="btn-outline-info btn-sm"
+            className="btn btn-outline-primary mt-1 float-right"
             loading={isLoading}
             disabled={isLoading}
             onClick={onClickHandler}

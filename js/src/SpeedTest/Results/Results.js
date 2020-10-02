@@ -27,12 +27,15 @@ export default function Results({
 
     return (
         <>
-            <h2>{_("Results")}</h2>
-            <RedownloadDataButton
-                ws={ws}
-                asyncId={asyncIdRedownloadData}
-                setAsyncId={setAsyncIdRedownloadData}
-            />
+            <h2>
+                {_("Results")}
+                <RedownloadDataButton
+                    ws={ws}
+                    asyncId={asyncIdRedownloadData}
+                    setAsyncId={setAsyncIdRedownloadData}
+                />
+            </h2>
+
             <ResultsTableWithErrorAndSpinner
                 apiState={data.state}
                 performed_tests={(data.data || {}).performed_tests}
