@@ -34,10 +34,15 @@ export default function ResultsTableRow({ performed_test }) {
             <td>{performed_test.speed_upload}</td>
             <td>{performed_test.ping || _("N/A")}</td>
             <td>
-                <a href={`${NETMETR_DETAIL_URL}?${performed_test.test_uuid}`}>
+                <a
+                    href={`${NETMETR_DETAIL_URL}?${performed_test.test_uuid}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {_("Details")}
-                    &nbsp;
-                    <i className="fas fa-external-link-alt" />
+                    <sup>
+                        <i className="fas fa-external-link-alt ml-1" />
+                    </sup>
                 </a>
             </td>
         </tr>
