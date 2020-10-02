@@ -8,7 +8,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Button } from "foris";
-import "./RedownloadDataButton.css";
 
 import { useRedownloadData } from "./hooks";
 
@@ -29,7 +28,7 @@ export default function RedownloadDataButton({ ws, asyncId, setAsyncId }) {
     return (
         <Button
             id="redownload-data-button"
-            className="btn btn-outline-primary mt-1 float-right"
+            className="btn btn-outline-primary float-right"
             loading={isLoading}
             disabled={isLoading}
             onClick={onClickHandler}
