@@ -25,25 +25,27 @@ ResultsTable.propTypes = {
 
 function ResultsTable({ performed_tests }) {
     return (
-        <table className="table table-hover text-center">
-            <thead>
-                <tr>
-                    <th scope="col">{_("Date and Time")}</th>
-                    <th scope="col">{_("Download [Mb/s]")}</th>
-                    <th scope="col">{_("Upload [Mb/s]")}</th>
-                    <th scope="col">{_("Ping [ms]")}</th>
-                    <th scope="col">{_("Link")}</th>
-                </tr>
-            </thead>
-            <tbody>
-                {performed_tests.map((performed_test) => (
-                    <ResultsTableRow
-                        key={performed_test.test_uuid}
-                        performed_test={performed_test}
-                    />
-                ))}
-            </tbody>
-        </table>
+        <div className="table-responsive">
+            <table className="table table-hover text-center">
+                <thead className="thead-light">
+                    <tr>
+                        <th scope="col">{_("Date and Time")}</th>
+                        <th scope="col">{_("Download [Mb/s]")}</th>
+                        <th scope="col">{_("Upload [Mb/s]")}</th>
+                        <th scope="col">{_("Ping [ms]")}</th>
+                        <th scope="col">{_("Link")}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {performed_tests.map((performed_test) => (
+                        <ResultsTableRow
+                            key={performed_test.test_uuid}
+                            performed_test={performed_test}
+                        />
+                    ))}
+                </tbody>
+            </table>
+        </div>
     );
 }
 
