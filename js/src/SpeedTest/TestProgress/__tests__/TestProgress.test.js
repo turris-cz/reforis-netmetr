@@ -25,10 +25,6 @@ describe("<Results />", () => {
         firstRender = asFragment();
     });
 
-    it("Should not be shown at the beginning.", () => {
-        expect(firstRender).toMatchSnapshot();
-    });
-
     it("Should render component when test is started.", () => {
         act(() =>
             webSockets.dispatch({
@@ -45,7 +41,7 @@ describe("<Results />", () => {
         expect(asFragment()).toMatchSnapshot();
     });
 
-    it("Should be hidden when speed test is finished.", () => {
+    it("Should be empty when speed test is finished.", () => {
         act(() =>
             webSockets.dispatch({
                 module: "netmetr",
