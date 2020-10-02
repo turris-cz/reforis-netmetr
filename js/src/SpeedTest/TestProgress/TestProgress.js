@@ -19,21 +19,36 @@ TestProgress.propTypes = {
 export default function TestProgress({ ws, asyncId }) {
     const [data] = useNetmetrTest(ws, asyncId);
 
-    if (!data) return null;
+    if (!data)
+        return (
+            <>
+                <div className="progress mb-2">
+                    {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
+                    <div
+                        id="progressbar"
+                        className="progress-bar progress-bar-striped progress-bar-animated bg-success text-uppercase"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style={{ width: "0%", fontSize: "11px" }}
+                    />
+                </div>
+            </>
+        );
 
     return (
         <>
-            <h6 className="text-center">{_("Test progress")}</h6>
-            <div className="progress">
+            <div className="progress mb-2">
                 {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
                 <div
                     id="progressbar"
-                    className="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                    className="progress-bar progress-bar-striped progress-bar-animated bg-success text-uppercase"
                     role="progressbar"
                     aria-valuenow={data.percent}
                     aria-valuemin="0"
                     aria-valuemax="100"
-                    style={{ width: `${data.percent}%` }}
+                    style={{ width: `${data.percent}%`, fontSize: "11px" }}
                 >
                     {data.msg}
                 </div>
