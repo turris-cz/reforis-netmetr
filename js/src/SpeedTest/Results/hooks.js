@@ -16,14 +16,22 @@ export default function useNetmetrResults(ws) {
         getDataRequest();
     }, [getDataRequest]);
 
-    const [dataDownloadDataFinishedData] = useWSForisModule(ws, "netmetr", "download_data_finished");
+    const [dataDownloadDataFinishedData] = useWSForisModule(
+        ws,
+        "netmetr",
+        "download_data_finished"
+    );
     useEffect(() => {
         if (dataDownloadDataFinishedData) {
             getDataRequest();
         }
     }, [getDataRequest, dataDownloadDataFinishedData]);
 
-    const [measureAndDownloadDataFinishedData] = useWSForisModule(ws, "netmetr", "measure_and_download_data_finished");
+    const [measureAndDownloadDataFinishedData] = useWSForisModule(
+        ws,
+        "netmetr",
+        "measure_and_download_data_finished"
+    );
     useEffect(() => {
         if (measureAndDownloadDataFinishedData) {
             getDataRequest();

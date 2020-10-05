@@ -11,9 +11,9 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
             </label>
           </div>
         </div>
--       <h4>
+-       <h3>
 -         Select autostart hours
--       </h4>
+-       </h3>
 -       <div
 -         class=\\"btn-group\\"
 -       >
@@ -21,13 +21,13 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           class=\\"btn btn-sm btn-outline-info \\"
 -           type=\\"button\\"
 -         >
--             Select all
+-           Select all
 -         </button>
 -         <button
 -           class=\\"btn btn-sm btn-outline-info\\"
 -           type=\\"button\\"
 -         >
--             Unselect all
+-           Unselect all
 -         </button>
 -       </div>
 -       <div
@@ -35,7 +35,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -         data-toggle=\\"buttons\\"
 -       >
 -         <label
--           class=\\"btn btn-outline-light active \\"
+-           class=\\"btn btn-outline-secondary active\\"
 -           for=\\"2\\"
 -         >
 -           12:00 AM
@@ -46,7 +46,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light active \\"
+-           class=\\"btn btn-outline-secondary active\\"
 -           for=\\"3\\"
 -         >
 -           1:00 AM
@@ -57,7 +57,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light active \\"
+-           class=\\"btn btn-outline-secondary active\\"
 -           for=\\"4\\"
 -         >
 -           2:00 AM
@@ -68,7 +68,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light active \\"
+-           class=\\"btn btn-outline-secondary active\\"
 -           for=\\"5\\"
 -         >
 -           3:00 AM
@@ -79,7 +79,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light active \\"
+-           class=\\"btn btn-outline-secondary active\\"
 -           for=\\"6\\"
 -         >
 -           4:00 AM
@@ -90,7 +90,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"7\\"
 -         >
 -           5:00 AM
@@ -101,7 +101,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"8\\"
 -         >
 -           6:00 AM
@@ -112,7 +112,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"9\\"
 -         >
 -           7:00 AM
@@ -123,7 +123,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"10\\"
 -         >
 -           8:00 AM
@@ -134,7 +134,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"11\\"
 -         >
 -           9:00 AM
@@ -145,7 +145,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"12\\"
 -         >
 -           10:00 AM
@@ -156,7 +156,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"13\\"
 -         >
 -           11:00 AM
@@ -167,7 +167,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"14\\"
 -         >
 -           12:00 PM
@@ -178,7 +178,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"15\\"
 -         >
 -           1:00 PM
@@ -189,7 +189,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"16\\"
 -         >
 -           2:00 PM
@@ -200,7 +200,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"17\\"
 -         >
 -           3:00 PM
@@ -211,7 +211,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"18\\"
 -         >
 -           4:00 PM
@@ -222,7 +222,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"19\\"
 -         >
 -           5:00 PM
@@ -233,7 +233,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"20\\"
 -         >
 -           6:00 PM
@@ -244,7 +244,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"21\\"
 -         >
 -           7:00 PM
@@ -255,7 +255,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"22\\"
 -         >
 -           8:00 PM
@@ -266,7 +266,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"23\\"
 -         >
 -           9:00 PM
@@ -277,7 +277,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"24\\"
 -         >
 -           10:00 PM
@@ -288,7 +288,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -         <label
--           class=\\"btn btn-outline-light \\"
+-           class=\\"btn btn-outline-secondary\\"
 -           for=\\"25\\"
 -         >
 -           11:00 PM
@@ -303,7 +303,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
           class=\\"text-right\\"
         >
           <button
-            class=\\"btn btn-primary  col-sm-12 col-lg-3\\""
+            class=\\"btn btn-primary  col-sm-12 col-md-3 col-lg-2\\""
 `;
 
 exports[`<Settings /> Should enable hours. 1`] = `
@@ -317,8 +317,8 @@ exports[`<Settings /> Should enable hours. 1`] = `
             />
           </label>
           <label
--           class=\\"btn btn-outline-light \\"
-+           class=\\"btn btn-outline-light active \\"
+-           class=\\"btn btn-outline-secondary\\"
++           class=\\"btn btn-outline-secondary active\\"
             for=\\"9\\"
           >
             7:00 AM
@@ -330,8 +330,8 @@ exports[`<Settings /> Should enable hours. 1`] = `
             />
           </label>
           <label
--           class=\\"btn btn-outline-light \\"
-+           class=\\"btn btn-outline-light active \\"
+-           class=\\"btn btn-outline-secondary\\"
++           class=\\"btn btn-outline-secondary active\\"
             for=\\"14\\"
           >
             12:00 PM
@@ -348,17 +348,17 @@ exports[`<Settings /> Should render component. 1`] = `
     NetMeter measures your internet parameters like upload, download and response time.
   </p>
   <div
-    class="col-sm-12 offset-lg-1 col-lg-10 p-0 mb-3"
+    class="card p-4 col-sm-12 col-lg-12 p-0 mb-3"
   >
     <form>
-      <h3>
+      <h2>
         Autostart
-      </h3>
+      </h2>
       <div
         class="form-group"
       >
         <div
-          class="custom-control custom-checkbox "
+          class="custom-control custom-switch custom-control-inline"
         >
           <input
             checked=""
@@ -374,9 +374,9 @@ exports[`<Settings /> Should render component. 1`] = `
           </label>
         </div>
       </div>
-      <h4>
+      <h3>
         Select autostart hours
-      </h4>
+      </h3>
       <div
         class="btn-group"
       >
@@ -384,13 +384,13 @@ exports[`<Settings /> Should render component. 1`] = `
           class="btn btn-sm btn-outline-info "
           type="button"
         >
-            Select all
+          Select all
         </button>
         <button
           class="btn btn-sm btn-outline-info"
           type="button"
         >
-            Unselect all
+          Unselect all
         </button>
       </div>
       <div
@@ -398,7 +398,7 @@ exports[`<Settings /> Should render component. 1`] = `
         data-toggle="buttons"
       >
         <label
-          class="btn btn-outline-light active "
+          class="btn btn-outline-secondary active"
           for="2"
         >
           12:00 AM
@@ -409,7 +409,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light active "
+          class="btn btn-outline-secondary active"
           for="3"
         >
           1:00 AM
@@ -420,7 +420,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light active "
+          class="btn btn-outline-secondary active"
           for="4"
         >
           2:00 AM
@@ -431,7 +431,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light active "
+          class="btn btn-outline-secondary active"
           for="5"
         >
           3:00 AM
@@ -442,7 +442,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light active "
+          class="btn btn-outline-secondary active"
           for="6"
         >
           4:00 AM
@@ -453,7 +453,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="7"
         >
           5:00 AM
@@ -464,7 +464,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="8"
         >
           6:00 AM
@@ -475,7 +475,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="9"
         >
           7:00 AM
@@ -486,7 +486,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="10"
         >
           8:00 AM
@@ -497,7 +497,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="11"
         >
           9:00 AM
@@ -508,7 +508,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="12"
         >
           10:00 AM
@@ -519,7 +519,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="13"
         >
           11:00 AM
@@ -530,7 +530,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="14"
         >
           12:00 PM
@@ -541,7 +541,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="15"
         >
           1:00 PM
@@ -552,7 +552,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="16"
         >
           2:00 PM
@@ -563,7 +563,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="17"
         >
           3:00 PM
@@ -574,7 +574,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="18"
         >
           4:00 PM
@@ -585,7 +585,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="19"
         >
           5:00 PM
@@ -596,7 +596,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="20"
         >
           6:00 PM
@@ -607,7 +607,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="21"
         >
           7:00 PM
@@ -618,7 +618,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="22"
         >
           8:00 PM
@@ -629,7 +629,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="23"
         >
           9:00 PM
@@ -640,7 +640,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="24"
         >
           10:00 PM
@@ -651,7 +651,7 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
         <label
-          class="btn btn-outline-light "
+          class="btn btn-outline-secondary"
           for="25"
         >
           11:00 PM
@@ -666,10 +666,10 @@ exports[`<Settings /> Should render component. 1`] = `
         class="text-right"
       >
         <button
-          class="btn btn-primary  col-sm-12 col-lg-3"
+          class="btn btn-primary  col-sm-12 col-md-3 col-lg-2"
           type="submit"
         >
-            Save
+          Save
         </button>
       </div>
     </form>

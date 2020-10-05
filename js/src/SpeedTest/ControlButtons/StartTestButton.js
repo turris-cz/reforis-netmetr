@@ -9,8 +9,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Button } from "foris";
 
-import "./StartTestButton.css";
-
 import { useStartTest } from "./hooks";
 
 StartTestButton.propTypes = {
@@ -26,7 +24,7 @@ export default function StartTestButton({ ws, asyncId, setAsyncId }) {
     return (
         <Button
             id="start-test-button"
-            className="btn btn-primary col-sm-12"
+            className="btn btn-primary col-sm-12 mb-2"
             loading={isLoading}
             disabled={isLoading}
             onClick={onClickHandler}

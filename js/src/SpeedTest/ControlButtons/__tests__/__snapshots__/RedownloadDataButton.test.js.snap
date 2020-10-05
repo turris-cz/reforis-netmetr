@@ -7,18 +7,18 @@ exports[`<RedownloadDataButton /> Should not react on different asyncId in WS me
 
   <DocumentFragment>
     <button
-      class=\\"btn btn-outline-info btn-sm\\"
+      class=\\"btn btn btn-outline-primary float-right\\"
 +     disabled=\\"\\"
       id=\\"redownload-data-button\\"
       type=\\"button\\"
     >
--       Redownload data
+-     Redownload data
 +     <span
 +       aria-hidden=\\"true\\"
 +       class=\\"spinner-border spinner-border-sm\\"
 +       role=\\"status\\"
 +     />
-+        Redownload data
++      Redownload data
     </button>
   </DocumentFragment>"
 `;
@@ -26,11 +26,11 @@ exports[`<RedownloadDataButton /> Should not react on different asyncId in WS me
 exports[`<RedownloadDataButton /> Should render component. 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn-outline-info btn-sm"
+    class="btn btn btn-outline-primary float-right"
     id="redownload-data-button"
     type="button"
   >
-      Redownload data
+    Redownload data
   </button>
 </DocumentFragment>
 `;
@@ -42,18 +42,18 @@ exports[`<RedownloadDataButton /> Should show spinner on click. 1`] = `
 
   <DocumentFragment>
     <button
-      class=\\"btn btn-outline-info btn-sm\\"
+      class=\\"btn btn btn-outline-primary float-right\\"
 +     disabled=\\"\\"
       id=\\"redownload-data-button\\"
       type=\\"button\\"
     >
--       Redownload data
+-     Redownload data
 +     <span
 +       aria-hidden=\\"true\\"
 +       class=\\"spinner-border spinner-border-sm\\"
 +       role=\\"status\\"
 +     />
-+        Redownload data
++      Redownload data
     </button>
   </DocumentFragment>"
 `;

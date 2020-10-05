@@ -7,18 +7,18 @@ exports[`<StartTestButton /> Should not react on different asyncId in WS message
 
   <DocumentFragment>
     <button
-      class=\\"btn btn btn-primary col-sm-12\\"
+      class=\\"btn btn btn-primary col-sm-12 mb-2\\"
 +     disabled=\\"\\"
       id=\\"start-test-button\\"
       type=\\"button\\"
     >
--       Start test
+-     Start test
 +     <span
 +       aria-hidden=\\"true\\"
 +       class=\\"spinner-border spinner-border-sm\\"
 +       role=\\"status\\"
 +     />
-+        Start test
++      Start test
     </button>
   </DocumentFragment>"
 `;
@@ -26,11 +26,11 @@ exports[`<StartTestButton /> Should not react on different asyncId in WS message
 exports[`<StartTestButton /> Should render component. 1`] = `
 <DocumentFragment>
   <button
-    class="btn btn btn-primary col-sm-12"
+    class="btn btn btn-primary col-sm-12 mb-2"
     id="start-test-button"
     type="button"
   >
-      Start test
+    Start test
   </button>
 </DocumentFragment>
 `;
@@ -42,18 +42,18 @@ exports[`<StartTestButton /> Should show spinner on click. 1`] = `
 
   <DocumentFragment>
     <button
-      class=\\"btn btn btn-primary col-sm-12\\"
+      class=\\"btn btn btn-primary col-sm-12 mb-2\\"
 +     disabled=\\"\\"
       id=\\"start-test-button\\"
       type=\\"button\\"
     >
--       Start test
+-     Start test
 +     <span
 +       aria-hidden=\\"true\\"
 +       class=\\"spinner-border spinner-border-sm\\"
 +       role=\\"status\\"
 +     />
-+        Start test
++      Start test
     </button>
   </DocumentFragment>"
 `;

@@ -8,11 +8,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./AutostartHourButtons.css";
 import { Button } from "foris";
 import AutostartHourButton from "./AutostartHourButton";
 import useAutostartHours from "./hooks";
 import { ALL_HOURS } from "./constants";
+
+import "./AutostartHourButtons.css";
 
 AutostartHoursButtons.propTypes = {
     formData: PropTypes.shape({
@@ -23,12 +24,15 @@ AutostartHoursButtons.propTypes = {
     disabled: PropTypes.bool,
 };
 
-export default function AutostartHoursButtons({ formData, setFormValue, disabled }) {
-    const [
-        toggleHour,
-        selectAllHours,
-        unselectAllHours,
-    ] = useAutostartHours(formData.hours_to_run, setFormValue);
+export default function AutostartHoursButtons({
+    formData,
+    setFormValue,
+    disabled,
+}) {
+    const [toggleHour, selectAllHours, unselectAllHours] = useAutostartHours(
+        formData.hours_to_run,
+        setFormValue
+    );
 
     return (
         <>
@@ -48,18 +52,19 @@ export default function AutostartHoursButtons({ formData, setFormValue, disabled
                     {_("Unselect all")}
                 </Button>
             </div>
-            <div className="btn-group-toggle hour-buttons" data-toggle="buttons">
-                {ALL_HOURS.map(
-                    (hour) => (
-                        <AutostartHourButton
-                            key={hour}
-                            hour_to_run={hour}
-                            checked={formData.hours_to_run.includes(hour)}
-                            onClick={() => toggleHour(hour)}
-                            disabled={disabled}
-                        />
-                    ),
-                )}
+            <div
+                className="btn-group-toggle hour-buttons"
+                data-toggle="buttons"
+            >
+                {ALL_HOURS.map((hour) => (
+                    <AutostartHourButton
+                        key={hour}
+                        hour_to_run={hour}
+                        checked={formData.hours_to_run.includes(hour)}
+                        onClick={() => toggleHour(hour)}
+                        disabled={disabled}
+                    />
+                ))}
             </div>
         </>
     );

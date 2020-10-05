@@ -20,7 +20,8 @@ const NetmetrPlugin = {
             path: "/speed-test",
             name: _("Speed Test"),
             component: SpeedTest,
-        }, {
+        },
+        {
             path: "/settings",
             name: _("Autostart Settings"),
             component: Settings,
