@@ -35,10 +35,10 @@ export default function ResultsTableRow({ performed_test }) {
         .format("l LT");
     return (
         <tr>
-            <td>{performed_test.ping || _("N/A")}</td>
             <td>{formatedTime}</td>
             <td>{download}</td>
             <td>{upload}</td>
+            <td>{ping && ping > 0 ? ping : _("N/A")}</td>
             <td>
                 <a
                     href={`${NETMETR_DETAIL_URL}?${uuid}`}
