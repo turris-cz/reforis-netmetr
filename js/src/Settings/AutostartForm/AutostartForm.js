@@ -32,6 +32,11 @@ export default function AutostartForm({ formData, setFormValue, disabled }) {
     return (
         <>
             <h2>{_("Autostart")}</h2>
+            <p>
+                {_(
+                    "Enable Autostart to allow automatic measurement on specific daily hours that can be chosen."
+                )}
+            </p>
             <Switch
                 label={_("Enabled")}
                 checked={formData.autostart_enabled}
