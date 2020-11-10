@@ -5,6 +5,9 @@ exports[`<AutostartForm /> should render component 1`] = `
   <h2>
     Autostart
   </h2>
+  <p>
+    Enable Autostart to allow automatic measurement on specific daily hours that can be chosen.
+  </p>
   <div
     class="form-group"
   >
@@ -313,5 +316,12 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
   </div>
+  <small>
+    <p
+      class="text-muted"
+    >
+      The requested start time is approximate. The measurement will start about the selected hour (time is no exact due to load distribution).
+    </p>
+  </small>
 </div>
 `;

@@ -5,7 +5,7 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 - First value
 + Second value
 
-@@ -30,298 +30,10 @@
+@@ -33,305 +33,10 @@
             >
               Enabled
             </label>
@@ -299,6 +299,13 @@ exports[`<Settings /> Should disable hours when disabled. 1`] = `
 -           />
 -         </label>
 -       </div>
+-       <small>
+-         <p
+-           class=\\"text-muted\\"
+-         >
+-           The requested start time is approximate. The measurement will start about the selected hour (time is no exact due to load distribution).
+-         </p>
+-       </small>
         <div
           class=\\"text-right\\"
         >
@@ -311,7 +318,7 @@ exports[`<Settings /> Should enable hours. 1`] = `
 - First value
 + Second value
 
-@@ -131,11 +131,11 @@
+@@ -134,11 +134,11 @@
               id=\\"8\\"
               type=\\"checkbox\\"
             />
@@ -324,7 +331,7 @@ exports[`<Settings /> Should enable hours. 1`] = `
             7:00 AM
             <input
               autocomplete=\\"off\\"
-@@ -186,11 +186,11 @@
+@@ -189,11 +189,11 @@
               id=\\"13\\"
               type=\\"checkbox\\"
             />
@@ -354,6 +361,9 @@ exports[`<Settings /> Should render component. 1`] = `
       <h2>
         Autostart
       </h2>
+      <p>
+        Enable Autostart to allow automatic measurement on specific daily hours that can be chosen.
+      </p>
       <div
         class="form-group"
       >
@@ -662,6 +672,13 @@ exports[`<Settings /> Should render component. 1`] = `
           />
         </label>
       </div>
+      <small>
+        <p
+          class="text-muted"
+        >
+          The requested start time is approximate. The measurement will start about the selected hour (time is no exact due to load distribution).
+        </p>
+      </small>
       <div
         class="text-right"
       >
