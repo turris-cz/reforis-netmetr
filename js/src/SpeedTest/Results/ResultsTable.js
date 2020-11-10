@@ -12,39 +12,55 @@ import { withErrorMessage, withSpinnerOnSending } from "foris";
 import ResultsTableRow from "./ResultsTableRow";
 
 ResultsTable.propTypes = {
-    performed_tests: PropTypes.arrayOf(PropTypes.shape({
-        test_uuid: PropTypes.string.isRequired,
-        time: PropTypes.number.isRequired,
-        speed_download: PropTypes.number.isRequired,
-        speed_upload: PropTypes.number.isRequired,
-        ping: PropTypes.number,
-    })).isRequired,
+    performed_tests: PropTypes.arrayOf(
+        PropTypes.shape({
+            test_uuid: PropTypes.string.isRequired,
+            time: PropTypes.number.isRequired,
+            speed_download: PropTypes.number.isRequired,
+            speed_upload: PropTypes.number.isRequired,
+            ping: PropTypes.number,
+        }),
+    ).isRequired,
 };
 
-function ResultsTable({ performed_tests }) {
+function ResultsTable({ performed_tests: tests }) {
     return (
-        <table className="table table-hover text-center">
-            <thead>
-                <tr>
-                    <th scope="col">{_("Date and Time")}</th>
-                    <th scope="col">{_("Download [Mb/s]")}</th>
-                    <th scope="col">{_("Upload [Mb/s]")}</th>
-                    <th scope="col">{_("Ping [ms]")}</th>
-                    <th scope="col">{_("Link")}</th>
-                </tr>
-            </thead>
-            <tbody>
-                {performed_tests.map((performed_test) => (
-                    <ResultsTableRow
-                        key={performed_test.test_uuid}
-                        performed_test={performed_test}
-                    />
-                ))}
-            </tbody>
-        </table>
+        <>
+            {tests.length ? (
+                <div className="table-responsive">
+                    <table className="table table-hover text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">{_("Date and Time")}</th>
+                                <th scope="col">{_("Download [Mb/s]")}</th>
+                                <th scope="col">{_("Upload [Mb/s]")}</th>
+                                <th scope="col">{_("Ping [ms]")}</th>
+                                <th scope="col">{_("Link")}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {tests.map((test) => (
+                                <ResultsTableRow
+                                    key={test.test_uuid}
+                                    performed_test={test}
+                                />
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            ) : (
+                <p className="text-muted text-center py-2">
+                    {_(
+                        "No tests have been performed lately. Try to start a new test or re-download data.",
+                    )}
+                </p>
+            )}
+        </>
     );
 }
 
-const ResultsTableWithErrorAndSpinner = withSpinnerOnSending(withErrorMessage(ResultsTable));
+const ResultsTableWithErrorAndSpinner = withSpinnerOnSending(
+    withErrorMessage(ResultsTable),
+);
 
 export default ResultsTableWithErrorAndSpinner;
