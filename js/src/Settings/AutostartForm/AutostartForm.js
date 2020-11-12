@@ -28,25 +28,29 @@ AutostartForm.defaultProps = {
     setFormValue: () => {},
 };
 
-export default function AutostartForm({
-    formData, setFormValue, disabled,
-}) {
+export default function AutostartForm({ formData, setFormValue, disabled }) {
     return (
         <>
             <h3>{_("Autostart")}</h3>
+            <p>
+                {_(
+                    "Enable Autostart to allow automatic measurement on specific daily hours that can be chosen.",
+                )}
+            </p>
             <CheckBox
                 label={_("Enabled")}
                 checked={formData.autostart_enabled}
-                onChange={setFormValue((value) => ({ autostart_enabled: { $set: value } }))}
+                onChange={setFormValue((value) => ({
+                    autostart_enabled: { $set: value },
+                }))}
             />
-            {formData.autostart_enabled
-                && (
+            {formData.autostart_enabled && (
                     <AutostartHoursForm
                         formData={formData}
                         setFormValue={setFormValue}
                         disabled={disabled}
                     />
-                )}
+            )}
         </>
     );
 }
