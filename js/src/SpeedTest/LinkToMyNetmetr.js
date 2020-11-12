@@ -17,7 +17,6 @@ LinkToMyNetmetr.propTypes = {
 export default function LinkToMyNetmetr({ syncCode }) {
     return (
         <p
-            className="text-muted"
             dangerouslySetInnerHTML={{
                 __html: _(
                     `For more information you need to enter your sync code <strong>${syncCode}</strong> <a href="${NETMETR_MY_URL}" target="_blank" rel="noopener noreferer">here<sup><i class="fas fa-external-link-alt link-outside-icon ml-1"></i></sup></a>.`

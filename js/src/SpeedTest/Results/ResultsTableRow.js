@@ -22,20 +22,26 @@ ResultsTableRow.propTypes = {
 };
 
 export default function ResultsTableRow({ performed_test }) {
-    const time = moment
-        .unix(performed_test.time)
+    const {
+        time,
+        speed_download: download,
+        speed_upload: upload,
+        ping,
+        test_uuid: uuid,
+    } = performed_test;
+    const formatedTime = moment
+        .unix(time)
         .locale(ForisTranslations.locale)
         .format("l LT");
-
     return (
         <tr>
-            <td>{time}</td>
-            <td>{performed_test.speed_download}</td>
-            <td>{performed_test.speed_upload}</td>
-            <td>{performed_test.ping || _("N/A")}</td>
+            <td>{formatedTime}</td>
+            <td>{download}</td>
+            <td>{upload}</td>
+            <td>{ping && ping > 0 ? ping : _("N/A")}</td>
             <td>
                 <a
-                    href={`${NETMETR_DETAIL_URL}?${performed_test.test_uuid}`}
+                    href={`${NETMETR_DETAIL_URL}?${uuid}`}
                     target="_blank"
                     rel="noopener noreferrer"
                 >

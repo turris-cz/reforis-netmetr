@@ -32,6 +32,11 @@ export default function AutostartForm({ formData, setFormValue, disabled }) {
     return (
         <>
             <h2>{_("Autostart")}</h2>
+            <p>
+                {_(
+                    "Enable Autostart to allow automatic measurement on specific daily hours that can be chosen."
+                )}
+            </p>
             <Switch
                 label={_("Enabled")}
                 checked={formData.autostart_enabled}
@@ -40,11 +45,20 @@ export default function AutostartForm({ formData, setFormValue, disabled }) {
                 }))}
             />
             {formData.autostart_enabled && (
-                <AutostartHoursForm
-                    formData={formData}
-                    setFormValue={setFormValue}
-                    disabled={disabled}
-                />
+                <>
+                    <AutostartHoursForm
+                        formData={formData}
+                        setFormValue={setFormValue}
+                        disabled={disabled}
+                    />
+                    <small>
+                        <p className="text-muted">
+                            {_(
+                                "The requested start time is approximate. The measurement will start about the selected hour (time is no exact due to load distribution)."
+                            )}
+                        </p>
+                    </small>
+                </>
             )}
         </>
     );
