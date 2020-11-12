@@ -39,280 +39,304 @@ exports[`<SpeedTest /> Should render component. 1`] = `
   >
       Redownload data
   </button>
-  <table
-    class="table table-hover text-center"
+  <div
+    class="table-responsive"
   >
-    <thead>
-      <tr>
-        <th
-          scope="col"
-        >
-          Date and Time
-        </th>
-        <th
-          scope="col"
-        >
-          Download [Mb/s]
-        </th>
-        <th
-          scope="col"
-        >
-          Upload [Mb/s]
-        </th>
-        <th
-          scope="col"
-        >
-          Ping [ms]
-        </th>
-        <th
-          scope="col"
-        >
-          Link
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          4/8/2020 5:09 PM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          29
-        </td>
-        <td>
-          0.89
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-1"
+    <table
+      class="table table-hover text-center"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
           >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          4/8/2020 4:11 PM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          29
-        </td>
-        <td>
-          0.81
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-2"
+            Date and Time
+          </th>
+          <th
+            scope="col"
           >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          4/8/2020 3:17 PM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          29
-        </td>
-        <td>
-          0.81
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-3"
+            Download [Mb/s]
+          </th>
+          <th
+            scope="col"
           >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          4/8/2020 2:30 PM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          29
-        </td>
-        <td>
-          0.81
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-4"
+            Upload [Mb/s]
+          </th>
+          <th
+            scope="col"
           >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          4/8/2020 1:01 PM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          0.86
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-5"
+            Ping [ms]
+          </th>
+          <th
+            scope="col"
           >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          4/8/2020 12:16 PM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          29
-        </td>
-        <td>
-          0.83
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-6"
-          >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          4/8/2020 11:01 AM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          29
-        </td>
-        <td>
-          0.84
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-7"
-          >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          4/8/2020 10:03 AM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          29
-        </td>
-        <td>
-          0.84
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-8"
-          >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          4/8/2020 9:18 AM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          0.84
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-9"
-          >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          4/8/2020 8:05 AM
-        </td>
-        <td>
-          30
-        </td>
-        <td>
-          29
-        </td>
-        <td>
-          0.83
-        </td>
-        <td>
-          <a
-            href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-10"
-          >
-            Details 
-            <i
-              class="fas fa-external-link-alt"
-            />
-          </a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+            Link
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            4/8/2020 5:09 PM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            29
+          </td>
+          <td>
+            0.89
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-1"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4/8/2020 4:11 PM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            29
+          </td>
+          <td>
+            0.81
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-2"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4/8/2020 3:17 PM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            29
+          </td>
+          <td>
+            0.81
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-3"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4/8/2020 2:30 PM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            29
+          </td>
+          <td>
+            0.81
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-4"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4/8/2020 1:01 PM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            0.86
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-5"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4/8/2020 12:16 PM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            29
+          </td>
+          <td>
+            0.83
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-6"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4/8/2020 11:01 AM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            29
+          </td>
+          <td>
+            0.84
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-7"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4/8/2020 10:03 AM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            29
+          </td>
+          <td>
+            0.84
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-8"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4/8/2020 9:18 AM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            0.84
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-9"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4/8/2020 8:05 AM
+          </td>
+          <td>
+            30
+          </td>
+          <td>
+            29
+          </td>
+          <td>
+            0.83
+          </td>
+          <td>
+            <a
+              href="https://www.netmetr.cz/en/detail.html?1234-1234-1234-1234-10"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Details 
+              <i
+                class="fas fa-external-link-alt"
+              />
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </DocumentFragment>
 `;

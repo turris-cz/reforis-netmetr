@@ -5,6 +5,9 @@ exports[`<AutostartForm /> should render component 1`] = `
   <h3>
     Autostart
   </h3>
+  <p>
+    Enable Autostart to allow automatic measurement on specific daily hours that can be chosen.
+  </p>
   <div
     class="form-group"
   >
@@ -53,7 +56,7 @@ exports[`<AutostartForm /> should render component 1`] = `
     data-toggle="buttons"
   >
     <label
-      class="btn btn-outline-light active "
+      class="btn btn-outline-secondary active "
       for="2"
     >
       12:00 AM
@@ -64,7 +67,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light active "
+      class="btn btn-outline-secondary active "
       for="3"
     >
       1:00 AM
@@ -75,7 +78,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light active "
+      class="btn btn-outline-secondary active "
       for="4"
     >
       2:00 AM
@@ -86,7 +89,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light active "
+      class="btn btn-outline-secondary active "
       for="5"
     >
       3:00 AM
@@ -97,7 +100,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light active "
+      class="btn btn-outline-secondary active "
       for="6"
     >
       4:00 AM
@@ -108,7 +111,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="7"
     >
       5:00 AM
@@ -119,7 +122,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="8"
     >
       6:00 AM
@@ -130,7 +133,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="9"
     >
       7:00 AM
@@ -141,7 +144,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="10"
     >
       8:00 AM
@@ -152,7 +155,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="11"
     >
       9:00 AM
@@ -163,7 +166,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="12"
     >
       10:00 AM
@@ -174,7 +177,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="13"
     >
       11:00 AM
@@ -185,7 +188,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="14"
     >
       12:00 PM
@@ -196,7 +199,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="15"
     >
       1:00 PM
@@ -207,7 +210,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="16"
     >
       2:00 PM
@@ -218,7 +221,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="17"
     >
       3:00 PM
@@ -229,7 +232,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="18"
     >
       4:00 PM
@@ -240,7 +243,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="19"
     >
       5:00 PM
@@ -251,7 +254,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="20"
     >
       6:00 PM
@@ -262,7 +265,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="21"
     >
       7:00 PM
@@ -273,7 +276,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="22"
     >
       8:00 PM
@@ -284,7 +287,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="23"
     >
       9:00 PM
@@ -295,7 +298,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="24"
     >
       10:00 PM
@@ -306,7 +309,7 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
     <label
-      class="btn btn-outline-light "
+      class="btn btn-outline-secondary "
       for="25"
     >
       11:00 PM
@@ -317,5 +320,12 @@ exports[`<AutostartForm /> should render component 1`] = `
       />
     </label>
   </div>
+  <small>
+    <p
+      class="text-muted"
+    >
+      The requested start time is approximate. The measurement will start about the selected hour (time is no exact due to load distribution).
+    </p>
+  </small>
 </div>
 `;
