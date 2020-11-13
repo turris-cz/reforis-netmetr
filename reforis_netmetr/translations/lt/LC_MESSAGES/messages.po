@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-04-08 20:48+0200\n"
+"POT-Creation-Date: 2020-11-13 15:10+0100\n"
 "PO-Revision-Date: 2020-04-01 12:59+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: lt\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "NetMetr"
 msgstr ""
 
-#: js/src/NetMetr.js:22
+#: js/src/NetMetr.js:23
 msgid ""
 "NetMeter measures your internet parameters like upload, download and "
 "response time."
@@ -33,98 +33,114 @@ msgstr ""
 msgid "Netmetr"
 msgstr ""
 
-#: js/src/SpeedTest/SpeedTest.js:36 js/src/app.js:21
+#: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
 msgid "Speed Test"
 msgstr ""
 
-#: js/src/app.js:25
+#: js/src/app.js:26
 msgid "Autostart Settings"
 msgstr ""
 
-#: js/src/Settings/AutostartForm/AutostartForm.js:36
+#: js/src/Settings/AutostartForm/AutostartForm.js:34
 msgid "Autostart"
 msgstr ""
 
-#: js/src/Settings/AutostartForm/AutostartForm.js:38
+#: js/src/Settings/AutostartForm/AutostartForm.js:36
+msgid ""
+"Enable Autostart to allow automatic measurement on specific daily hours "
+"that can be chosen."
+msgstr ""
+
+#: js/src/Settings/AutostartForm/AutostartForm.js:41
 msgid "Enabled"
 msgstr ""
 
-#: js/src/Settings/AutostartForm/AutostartHoursButtons.js:41
+#: js/src/Settings/AutostartForm/AutostartForm.js:56
+msgid ""
+"The requested start time is approximate. The measurement will start about"
+" the selected hour (time is no exact due to load distribution)."
+msgstr ""
+
+#: js/src/Settings/AutostartForm/AutostartHoursButtons.js:45
 msgid "Select all"
 msgstr ""
 
-#: js/src/Settings/AutostartForm/AutostartHoursButtons.js:48
+#: js/src/Settings/AutostartForm/AutostartHoursButtons.js:52
 msgid "Unselect all"
 msgstr ""
 
-#: js/src/Settings/AutostartForm/AutostratHoursForm.js:27
+#: js/src/Settings/AutostartForm/AutostratHoursForm.js:29
 msgid "Select autostart hours"
 msgstr ""
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
 "For more information you need to enter your sync code "
-"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\">here</a>."
+"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" "
+"target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
+"external-link-alt link-outside-icon ml-1\"></i></sup></a>."
 msgstr ""
 
-#: js/src/SpeedTest/hooks.js:18
+#: js/src/SpeedTest/hooks.js:23
 msgid "Data downloaded successfully."
 msgstr ""
 
-#: js/src/SpeedTest/hooks.js:20
+#: js/src/SpeedTest/hooks.js:27
 msgid "Data downloading failed."
 msgstr ""
 
-#: js/src/SpeedTest/hooks.js:29
+#: js/src/SpeedTest/hooks.js:41
 msgid "Speed test finished successfully."
 msgstr ""
 
-#: js/src/SpeedTest/hooks.js:31
+#: js/src/SpeedTest/hooks.js:45
 msgid "Speed test failed."
 msgstr ""
 
-#: js/src/SpeedTest/ControlButtons/RedownloadDataButton.js:33
+#: js/src/SpeedTest/ControlButtons/RedownloadDataButton.js:36
 msgid "Redownload data"
 msgstr ""
 
-#: js/src/SpeedTest/ControlButtons/StartTestButton.js:34
+#: js/src/SpeedTest/ControlButtons/StartTestButton.js:32
 msgid "Start test"
 msgstr ""
 
-#: js/src/SpeedTest/Results/Results.js:26
+#: js/src/SpeedTest/Results/Results.js:31
 msgid "Results"
 msgstr ""
 
-#: js/src/SpeedTest/Results/ResultsTable.js:29
+#: js/src/SpeedTest/Results/ResultsTable.js:34
 msgid "Date and Time"
 msgstr ""
 
-#: js/src/SpeedTest/Results/ResultsTable.js:30
+#: js/src/SpeedTest/Results/ResultsTable.js:35
 msgid "Download [Mb/s]"
 msgstr ""
 
-#: js/src/SpeedTest/Results/ResultsTable.js:31
+#: js/src/SpeedTest/Results/ResultsTable.js:36
 msgid "Upload [Mb/s]"
 msgstr ""
 
-#: js/src/SpeedTest/Results/ResultsTable.js:32
+#: js/src/SpeedTest/Results/ResultsTable.js:37
 msgid "Ping [ms]"
 msgstr ""
 
-#: js/src/SpeedTest/Results/ResultsTable.js:33
+#: js/src/SpeedTest/Results/ResultsTable.js:38
 msgid "Link"
 msgstr ""
 
-#: js/src/SpeedTest/Results/ResultsTableRow.js:34
+#: js/src/SpeedTest/Results/ResultsTable.js:53
+msgid ""
+"No tests have been performed lately. Try to start a new test or re-"
+"download data."
+msgstr ""
+
+#: js/src/SpeedTest/Results/ResultsTableRow.js:41
 msgid "N/A"
 msgstr ""
 
-#: js/src/SpeedTest/Results/ResultsTableRow.js:37
+#: js/src/SpeedTest/Results/ResultsTableRow.js:48
 msgid "Details"
-msgstr ""
-
-#: js/src/SpeedTest/TestProgress/TestProgress.js:27
-msgid "Test progress"
 msgstr ""
 
 #: reforis_netmetr/__init__.py:43
@@ -134,5 +150,15 @@ msgstr ""
 #~ msgid ""
 #~ "Netmeter measures your internet parameters "
 #~ "like upload, download and response time."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For more information you need to "
+#~ "enter your sync code "
+#~ "<strong>${syncCode}</strong> <a "
+#~ "href=\"${NETMETR_MY_URL}\">here</a>."
+#~ msgstr ""
+
+#~ msgid "Test progress"
 #~ msgstr ""
 
