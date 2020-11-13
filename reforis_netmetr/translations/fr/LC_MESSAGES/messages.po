@@ -7,24 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-04-08 20:48+0200\n"
+"POT-Creation-Date: 2020-11-13 15:10+0100\n"
 "PO-Revision-Date: 2020-04-15 15:25+0000\n"
 "Last-Translator: Florian <floflr@zaclys.net>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/turris/"
-"reforis-netmetr-plugin/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris"
+"/reforis-netmetr-plugin/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.0-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/NetMetr.js:21
 msgid "NetMetr"
 msgstr "NetMetr"
 
-#: js/src/NetMetr.js:22
+#: js/src/NetMetr.js:23
 msgid ""
 "NetMeter measures your internet parameters like upload, download and "
 "response time."
@@ -36,101 +35,115 @@ msgstr ""
 msgid "Netmetr"
 msgstr "Netmetr"
 
-#: js/src/SpeedTest/SpeedTest.js:36 js/src/app.js:21
+#: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
 msgid "Speed Test"
 msgstr "Test de vitesse"
 
-#: js/src/app.js:25
+#: js/src/app.js:26
 msgid "Autostart Settings"
 msgstr "Paramètres de démarrage automatique"
 
-#: js/src/Settings/AutostartForm/AutostartForm.js:36
+#: js/src/Settings/AutostartForm/AutostartForm.js:34
 msgid "Autostart"
 msgstr "Démarrage automatique"
 
-#: js/src/Settings/AutostartForm/AutostartForm.js:38
+#: js/src/Settings/AutostartForm/AutostartForm.js:36
+msgid ""
+"Enable Autostart to allow automatic measurement on specific daily hours "
+"that can be chosen."
+msgstr ""
+
+#: js/src/Settings/AutostartForm/AutostartForm.js:41
 msgid "Enabled"
 msgstr "Activer"
 
-#: js/src/Settings/AutostartForm/AutostartHoursButtons.js:41
+#: js/src/Settings/AutostartForm/AutostartForm.js:56
+msgid ""
+"The requested start time is approximate. The measurement will start about"
+" the selected hour (time is no exact due to load distribution)."
+msgstr ""
+
+#: js/src/Settings/AutostartForm/AutostartHoursButtons.js:45
 msgid "Select all"
 msgstr "Tout sélectionner"
 
-#: js/src/Settings/AutostartForm/AutostartHoursButtons.js:48
+#: js/src/Settings/AutostartForm/AutostartHoursButtons.js:52
 msgid "Unselect all"
 msgstr "Tout désélectionner"
 
-#: js/src/Settings/AutostartForm/AutostratHoursForm.js:27
+#: js/src/Settings/AutostartForm/AutostratHoursForm.js:29
 msgid "Select autostart hours"
 msgstr "Sélectionner les heures de démarrage automatique"
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
 "For more information you need to enter your sync code "
-"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\">here</a>."
+"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" "
+"target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
+"external-link-alt link-outside-icon ml-1\"></i></sup></a>."
 msgstr ""
-"Pour plus d'informations, vous devez entrer votre code de synchronisation "
-"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\">ici</a>."
 
-#: js/src/SpeedTest/hooks.js:18
+#: js/src/SpeedTest/hooks.js:23
 msgid "Data downloaded successfully."
 msgstr "Données téléchargées avec succès."
 
-#: js/src/SpeedTest/hooks.js:20
+#: js/src/SpeedTest/hooks.js:27
 msgid "Data downloading failed."
 msgstr "Le téléchargement des données a échoué."
 
-#: js/src/SpeedTest/hooks.js:29
+#: js/src/SpeedTest/hooks.js:41
 msgid "Speed test finished successfully."
 msgstr "Le test de vitesse s'est terminé avec succès."
 
-#: js/src/SpeedTest/hooks.js:31
+#: js/src/SpeedTest/hooks.js:45
 msgid "Speed test failed."
 msgstr "Le test de vitesse a échoué."
 
-#: js/src/SpeedTest/ControlButtons/RedownloadDataButton.js:33
+#: js/src/SpeedTest/ControlButtons/RedownloadDataButton.js:36
 msgid "Redownload data"
 msgstr "Recharger les données"
 
-#: js/src/SpeedTest/ControlButtons/StartTestButton.js:34
+#: js/src/SpeedTest/ControlButtons/StartTestButton.js:32
 msgid "Start test"
 msgstr "Démarrer le test"
 
-#: js/src/SpeedTest/Results/Results.js:26
+#: js/src/SpeedTest/Results/Results.js:31
 msgid "Results"
 msgstr "Résultats"
 
-#: js/src/SpeedTest/Results/ResultsTable.js:29
+#: js/src/SpeedTest/Results/ResultsTable.js:34
 msgid "Date and Time"
 msgstr "Date et Heure"
 
-#: js/src/SpeedTest/Results/ResultsTable.js:30
+#: js/src/SpeedTest/Results/ResultsTable.js:35
 msgid "Download [Mb/s]"
 msgstr "Téléchargement [Mo/s]"
 
-#: js/src/SpeedTest/Results/ResultsTable.js:31
+#: js/src/SpeedTest/Results/ResultsTable.js:36
 msgid "Upload [Mb/s]"
 msgstr "Téléversement [Mo/s]"
 
-#: js/src/SpeedTest/Results/ResultsTable.js:32
+#: js/src/SpeedTest/Results/ResultsTable.js:37
 msgid "Ping [ms]"
 msgstr "Ping [ms]"
 
-#: js/src/SpeedTest/Results/ResultsTable.js:33
+#: js/src/SpeedTest/Results/ResultsTable.js:38
 msgid "Link"
 msgstr "Lien"
 
-#: js/src/SpeedTest/Results/ResultsTableRow.js:34
+#: js/src/SpeedTest/Results/ResultsTable.js:53
+msgid ""
+"No tests have been performed lately. Try to start a new test or re-"
+"download data."
+msgstr ""
+
+#: js/src/SpeedTest/Results/ResultsTableRow.js:41
 msgid "N/A"
 msgstr "N/A"
 
-#: js/src/SpeedTest/Results/ResultsTableRow.js:37
+#: js/src/SpeedTest/Results/ResultsTableRow.js:48
 msgid "Details"
 msgstr "Détails"
-
-#: js/src/SpeedTest/TestProgress/TestProgress.js:27
-msgid "Test progress"
-msgstr "Progression des tests"
 
 #: reforis_netmetr/__init__.py:43
 msgid "Cannot update netmetr settings."
@@ -140,3 +153,18 @@ msgstr "Impossible de mettre à jour les paramètres de netmetr."
 #~ "Netmeter measures your internet parameters "
 #~ "like upload, download and response time."
 #~ msgstr ""
+
+#~ msgid ""
+#~ "For more information you need to "
+#~ "enter your sync code "
+#~ "<strong>${syncCode}</strong> <a "
+#~ "href=\"${NETMETR_MY_URL}\">here</a>."
+#~ msgstr ""
+#~ "Pour plus d'informations, vous devez "
+#~ "entrer votre code de synchronisation "
+#~ "<strong>${syncCode}</strong> <a "
+#~ "href=\"${NETMETR_MY_URL}\">ici</a>."
+
+#~ msgid "Test progress"
+#~ msgstr "Progression des tests"
+
