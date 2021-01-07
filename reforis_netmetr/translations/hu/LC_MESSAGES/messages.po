@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2020-04-08 20:48+0200\n"
-"PO-Revision-Date: 2021-01-07 01:26+0000\n"
+"PO-Revision-Date: 2021-01-08 23:32+0000\n"
 "Last-Translator: Zoli <boritek@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/turris/"
 "reforis-netmetr-plugin/hu/>\n"
@@ -29,88 +29,92 @@ msgid ""
 "NetMeter measures your internet parameters like upload, download and "
 "response time."
 msgstr ""
+"A NetMeter méri az internetes paramétereket, mint a feltöltés, a letöltés és "
+"a válaszidő."
 
 #: js/src/app.js:15
 msgid "Netmetr"
-msgstr ""
+msgstr "Netmetr"
 
 #: js/src/SpeedTest/SpeedTest.js:36 js/src/app.js:21
 msgid "Speed Test"
-msgstr ""
+msgstr "Sebességmérés"
 
 #: js/src/app.js:25
 msgid "Autostart Settings"
-msgstr ""
+msgstr "Automatikus indítás beállításai"
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:36
 msgid "Autostart"
-msgstr ""
+msgstr "Automatikus indítás"
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:38
 msgid "Enabled"
-msgstr ""
+msgstr "Engedélyezve"
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:41
 msgid "Select all"
-msgstr ""
+msgstr "Mindent kijelöl"
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:48
 msgid "Unselect all"
-msgstr ""
+msgstr "Minden kijelölés megszüntetése"
 
 #: js/src/Settings/AutostartForm/AutostratHoursForm.js:27
 msgid "Select autostart hours"
-msgstr ""
+msgstr "Az automatikus indítási órák kiválasztása"
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
 "For more information you need to enter your sync code "
 "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\">here</a>."
 msgstr ""
+"További információért adja meg a szinkronizálási kódot <strong>${syncCode}</"
+"strong> <a href=\"${NETMETR_MY_URL}\">itt</a>."
 
 #: js/src/SpeedTest/hooks.js:18
 msgid "Data downloaded successfully."
-msgstr ""
+msgstr "Az adatok letöltése sikeresen megtörtént."
 
 #: js/src/SpeedTest/hooks.js:20
 msgid "Data downloading failed."
-msgstr ""
+msgstr "Az adatok letöltése nem sikerült."
 
 #: js/src/SpeedTest/hooks.js:29
 msgid "Speed test finished successfully."
-msgstr ""
+msgstr "A sebességmérés sikeresen befejeződött."
 
 #: js/src/SpeedTest/hooks.js:31
 msgid "Speed test failed."
-msgstr ""
+msgstr "A sebességmérés nem sikerült."
 
 #: js/src/SpeedTest/ControlButtons/RedownloadDataButton.js:33
 msgid "Redownload data"
-msgstr ""
+msgstr "Adatok újraletöltése"
 
 #: js/src/SpeedTest/ControlButtons/StartTestButton.js:34
 msgid "Start test"
-msgstr ""
+msgstr "Teszt indítása"
 
 #: js/src/SpeedTest/Results/Results.js:26
 msgid "Results"
-msgstr ""
+msgstr "Eredmények"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:29
 msgid "Date and Time"
-msgstr ""
+msgstr "Dátum és idő"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:30
 msgid "Download [Mb/s]"
-msgstr ""
+msgstr "Letöltés [Mb/s]"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:31
 msgid "Upload [Mb/s]"
-msgstr ""
+msgstr "Feltöltés [Mb/s]"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:32
 msgid "Ping [ms]"
-msgstr ""
+msgstr "Ping [ms]"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:33
 msgid "Link"
@@ -126,11 +130,11 @@ msgstr "Részletek"
 
 #: js/src/SpeedTest/TestProgress/TestProgress.js:27
 msgid "Test progress"
-msgstr ""
+msgstr "A tesztelés előrehaladása"
 
 #: reforis_netmetr/__init__.py:43
 msgid "Cannot update netmetr settings."
-msgstr ""
+msgstr "A netmetr beállításai nem frissíthetők."
 
 #~ msgid ""
 #~ "Netmeter measures your internet parameters "
