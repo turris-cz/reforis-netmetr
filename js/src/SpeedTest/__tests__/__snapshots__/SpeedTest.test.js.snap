@@ -6,7 +6,7 @@ exports[`<SpeedTest /> Should render component. 1`] = `
     NetMetr
   </h1>
   <p>
-    NetMeter measures your internet parameters like upload, download and response time.
+    NetMetr measures your internet parameters like upload, download and response time.
   </p>
   <div
     class="card p-4"
