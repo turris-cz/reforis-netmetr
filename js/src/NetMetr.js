@@ -21,7 +21,7 @@ export default function NetMetr({ children }) {
             <h1>{_("NetMetr")}</h1>
             <p>
                 {_(
-                    "NetMeter measures your internet parameters like upload, download and response time."
+                    "NetMetr measures your internet parameters like upload, download and response time."
                 )}
             </p>
             {children}

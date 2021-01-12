@@ -352,7 +352,7 @@ exports[`<Settings /> Should render component. 1`] = `
     NetMetr
   </h1>
   <p>
-    NetMeter measures your internet parameters like upload, download and response time.
+    NetMetr measures your internet parameters like upload, download and response time.
   </p>
   <div
     class="card p-4 col-sm-12 col-lg-12 p-0 mb-3"

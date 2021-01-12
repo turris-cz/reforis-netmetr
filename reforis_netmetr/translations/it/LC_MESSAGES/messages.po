@@ -24,12 +24,12 @@ msgstr ""
 
 #: js/src/NetMetr.js:23
 msgid ""
-"NetMeter measures your internet parameters like upload, download and "
+"NetMetr measures your internet parameters like upload, download and "
 "response time."
 msgstr ""
 
 #: js/src/app.js:15
-msgid "Netmetr"
+msgid "NetMetr"
 msgstr ""
 
 #: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
@@ -143,11 +143,11 @@ msgid "Details"
 msgstr ""
 
 #: reforis_netmetr/__init__.py:43
-msgid "Cannot update netmetr settings."
+msgid "Cannot update NetMetr settings."
 msgstr ""
 
 #~ msgid ""
-#~ "Netmeter measures your internet parameters "
+#~ "NetMetr measures your internet parameters "
 #~ "like upload, download and response time."
 #~ msgstr ""
 
