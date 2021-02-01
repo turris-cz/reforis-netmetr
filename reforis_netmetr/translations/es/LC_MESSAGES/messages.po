@@ -129,7 +129,7 @@ msgstr "Subida [Mb/s]"
 msgid "Ping [ms]"
 msgstr "Ping [ms]"
 
-#: js/src/SpeedTest/Results/ResultsTable.js:38
+#: js/src/SpeedTest/Results/ResultsTable.js:33
 msgid "Link"
 msgstr "Enlace"
 
@@ -139,29 +139,18 @@ msgid ""
 "download data."
 msgstr ""
 
-#: js/src/SpeedTest/Results/ResultsTableRow.js:41
+#: js/src/SpeedTest/Results/ResultsTableRow.js:34
 msgid "N/A"
 msgstr "No disponible"
 
-#: js/src/SpeedTest/Results/ResultsTableRow.js:48
+#: js/src/SpeedTest/Results/ResultsTableRow.js:37
 msgid "Details"
 msgstr "Detalles"
 
+#: js/src/SpeedTest/TestProgress/TestProgress.js:27
+msgid "Test progress"
+msgstr "Progreso del test"
+
 #: reforis_netmetr/__init__.py:43
-msgid "Cannot update NetMetr settings."
-msgstr "No se pueden actualizar las opciones de NetMetr"
-
-#~ msgid ""
-#~ "For more information you need to "
-#~ "enter your sync code "
-#~ "<strong>${syncCode}</strong> <a "
-#~ "href=\"${NETMETR_MY_URL}\">here</a>."
-#~ msgstr ""
-#~ "Para mas informaciòn, necesita introducior "
-#~ "su còdigo de sincronizaciòn "
-#~ "<strong>${syncCode}</strong> <a "
-#~ "href=\"${NETMETR_MY_URL}\">aquì</a>."
-
-#~ msgid "Test progress"
-#~ msgstr "Progreso del test"
-
+msgid "Cannot update netmetr settings."
+msgstr "No se pueden actualizar las opciones de netmetr"
