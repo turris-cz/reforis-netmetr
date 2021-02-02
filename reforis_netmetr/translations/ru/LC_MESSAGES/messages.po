@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-13 15:10+0100\n"
-"PO-Revision-Date: 2020-04-18 13:11+0000\n"
-"Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
+"POT-Creation-Date: 2021-02-02 17:17+0100\n"
+"PO-Revision-Date: 2020-11-18 21:28+0000\n"
+"Last-Translator: Artem <KovalevArtem.ru@gmail.com>\n"
 "Language: ru\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris"
 "/reforis-netmetr-plugin/ru/>\n"
@@ -33,8 +33,8 @@ msgstr ""
 "передачи и время отклика."
 
 #: js/src/app.js:15
-msgid "NetMetr"
-msgstr "NetMetr"
+msgid "Netmetr"
+msgstr ""
 
 #: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
 msgid "Speed Test"
@@ -83,6 +83,9 @@ msgid ""
 "target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
 "external-link-alt link-outside-icon ml-1\"></i></sup></a>."
 msgstr ""
+"Для получения дополнительной информации вам необходимо ввести свой код "
+"синхронизации <strong> $ {syncCode}</strong> <a "
+"href=\"${ndomNETMETR_MY_URL}\"> здесь</a>."
 
 #: js/src/SpeedTest/hooks.js:23
 msgid "Data downloaded successfully."
@@ -147,25 +150,9 @@ msgid "Details"
 msgstr "Подробности"
 
 #: reforis_netmetr/__init__.py:43
-msgid "Cannot update NetMetr settings."
-msgstr "Не удается обновить настройки NetMetr."
+msgid "Cannot update netmetr settings."
+msgstr ""
 
-#~ msgid ""
-#~ "NetMetr measures your internet parameters "
-#~ "like upload, download and response time."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "For more information you need to "
-#~ "enter your sync code "
-#~ "<strong>${syncCode}</strong> <a "
-#~ "href=\"${NETMETR_MY_URL}\">here</a>."
-#~ msgstr ""
-#~ "Для получения дополнительной информации вам"
-#~ " необходимо ввести свой код синхронизации"
-#~ " <strong> $ {syncCode}</strong> <a "
-#~ "href=\"${ndomNETMETR_MY_URL}\"> здесь</a>."
-
-#~ msgid "Test progress"
-#~ msgstr "Прогресс теста"
+#~ msgid "Cannot update NetMetr settings."
+#~ msgstr "Не удается обновить настройки NetMetr."
 

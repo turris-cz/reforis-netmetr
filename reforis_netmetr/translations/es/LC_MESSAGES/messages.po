@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-11-13 15:10+0100\n"
+"POT-Creation-Date: 2021-02-02 17:17+0100\n"
 "PO-Revision-Date: 2020-05-25 09:41+0000\n"
 "Last-Translator: Eduardo Cuthbert <elguber@gmail.com>\n"
 "Language: es\n"
@@ -33,8 +33,8 @@ msgstr ""
 "respuesta."
 
 #: js/src/app.js:15
-msgid "NetMetr"
-msgstr "NetMetr"
+msgid "Netmetr"
+msgstr ""
 
 #: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
 msgid "Speed Test"
@@ -148,19 +148,8 @@ msgid "Details"
 msgstr "Detalles"
 
 #: reforis_netmetr/__init__.py:43
-msgid "Cannot update NetMetr settings."
-msgstr "No se pueden actualizar las opciones de NetMetr"
-
-#~ msgid ""
-#~ "For more information you need to "
-#~ "enter your sync code "
-#~ "<strong>${syncCode}</strong> <a "
-#~ "href=\"${NETMETR_MY_URL}\">here</a>."
-#~ msgstr ""
-#~ "Para mas informaciòn, necesita introducior "
-#~ "su còdigo de sincronizaciòn "
-#~ "<strong>${syncCode}</strong> <a "
-#~ "href=\"${NETMETR_MY_URL}\">aquì</a>."
+msgid "Cannot update netmetr settings."
+msgstr "No se pueden actualizar las opciones de netmetr"
 
 #~ msgid "Test progress"
 #~ msgstr "Progreso del test"
