@@ -1,9 +1,13 @@
 {
     "name": "reforis_netmetr",
     "author": "CZ.NIC, z.s.p.o.",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.nic.cz/turris/reforis/reforis-netmetr.git"
+    },
     "license": "GPL-3.0",
-    "version": "0.2.1",
-    "description": "",
+    "version": "0.2.2",
+    "description": "reForis NetMetr Plugin",
     "main": "./src/app.js",
     "dependencies": {
         "foris": "^5.1.11",
