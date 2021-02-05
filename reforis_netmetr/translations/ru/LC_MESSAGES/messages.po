@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-02 17:17+0100\n"
-"PO-Revision-Date: 2021-02-05 09:35+0000\n"
+"PO-Revision-Date: 2021-02-07 00:50+0000\n"
 "Last-Translator: Artem <KovalevArtem.ru@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris/"
 "reforis-netmetr-plugin/ru/>\n"
@@ -152,7 +152,7 @@ msgstr "Подробности"
 
 #: reforis_netmetr/__init__.py:43
 msgid "Cannot update netmetr settings."
-msgstr ""
+msgstr "Не удается обновить настройки netmetr."
 
 #~ msgid "Cannot update NetMetr settings."
 #~ msgstr "Не удается обновить настройки NetMetr."
