@@ -8,18 +8,20 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-02 17:17+0100\n"
-"PO-Revision-Date: 2020-04-15 15:25+0000\n"
-"Last-Translator: Florian <floflr@zaclys.net>\n"
+"PO-Revision-Date: 2021-02-08 14:50+0000\n"
+"Last-Translator: Yuraï Slovaque <assistance@simplix.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/"
+"reforis-netmetr-plugin/fr/>\n"
 "Language: fr\n"
-"Language-Team: French <https://hosted.weblate.org/projects/turris"
-"/reforis-netmetr-plugin/fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/NetMetr.js:21
+#, fuzzy
 msgid "NetMetr"
 msgstr "NetMetr"
 
@@ -28,12 +30,13 @@ msgid ""
 "NetMetr measures your internet parameters like upload, download and "
 "response time."
 msgstr ""
-"NetMetr mesure vos paramètres internet tels le téléchargement, le "
+"NetMetr mesure vos paramètres Internet tels que le téléchargement, le "
 "téléversement et le temps de réponse."
 
 #: js/src/app.js:15
+#, fuzzy
 msgid "Netmetr"
-msgstr ""
+msgstr "Netmetr"
 
 #: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
 msgid "Speed Test"
@@ -48,20 +51,26 @@ msgid "Autostart"
 msgstr "Démarrage automatique"
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:36
+#, fuzzy
 msgid ""
 "Enable Autostart to allow automatic measurement on specific daily hours "
 "that can be chosen."
 msgstr ""
+"Activez le démarrage automatique pour permettre la mesure automatique "
+"quotidienne aux horaires spécifiques qui peuvent être choisies."
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:41
 msgid "Enabled"
-msgstr "Activer"
+msgstr "Activé"
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:56
 msgid ""
 "The requested start time is approximate. The measurement will start about"
 " the selected hour (time is no exact due to load distribution)."
 msgstr ""
+"L'heure de début demandée est approximative. La mesure commencera vers "
+"l'heure sélectionnée (l'heure n'est pas exacte en raison de la répartition "
+"de la charge)."
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:45
 msgid "Select all"
@@ -82,8 +91,10 @@ msgid ""
 "target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
 "external-link-alt link-outside-icon ml-1\"></i></sup></a>."
 msgstr ""
-"Pour plus d'informations, vous devez entrer votre code de synchronisation"
-" <strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\">ici</a>."
+"Pour plus d'informations, vous devez entrer votre code de synchronisation "
+"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" target=\"_blank\" "
+"rel=\"noopener noreferer\">ici<sup><i class=\"fas fa-external-linkici link-"
+"outside-icon ml-1\"></i></sup></a>."
 
 #: js/src/SpeedTest/hooks.js:23
 msgid "Data downloaded successfully."
@@ -103,7 +114,7 @@ msgstr "Le test de vitesse a échoué."
 
 #: js/src/SpeedTest/ControlButtons/RedownloadDataButton.js:36
 msgid "Redownload data"
-msgstr "Recharger les données"
+msgstr "Ré-télécharger les données"
 
 #: js/src/SpeedTest/ControlButtons/StartTestButton.js:32
 msgid "Start test"
@@ -138,6 +149,8 @@ msgid ""
 "No tests have been performed lately. Try to start a new test or re-"
 "download data."
 msgstr ""
+"Aucun test n'a été effectué récemment. Essayez de démarrer un nouveau test "
+"ou de re-télécharger les données."
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:41
 msgid "N/A"
@@ -149,7 +162,7 @@ msgstr "Détails"
 
 #: reforis_netmetr/__init__.py:43
 msgid "Cannot update netmetr settings."
-msgstr ""
+msgstr "Impossible de mettre à jour les paramètres netmetr."
 
 #~ msgid ""
 #~ "NetMetr measures your internet parameters "
@@ -158,4 +171,3 @@ msgstr ""
 
 #~ msgid "Cannot update NetMetr settings."
 #~ msgstr "Impossible de mettre à jour les paramètres de NetMetr."
-
