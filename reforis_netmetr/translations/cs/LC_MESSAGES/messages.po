@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-02-02 17:17+0100\n"
-"PO-Revision-Date: 2021-02-08 14:50+0000\n"
-"Last-Translator: Martin Novák <testxxx1@gmail.com>\n"
+"PO-Revision-Date: 2021-02-17 14:50+0000\n"
+"Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "reforis-netmetr-plugin/cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.5\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/NetMetr.js:21
@@ -53,6 +53,8 @@ msgid ""
 "Enable Autostart to allow automatic measurement on specific daily hours "
 "that can be chosen."
 msgstr ""
+"Povolení Automatického spouštění umožňuje automaticky měřit v určité denní "
+"hodiny, které si lze zvolit."
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:41
 msgid "Enabled"
@@ -63,6 +65,8 @@ msgid ""
 "The requested start time is approximate. The measurement will start about"
 " the selected hour (time is no exact due to load distribution)."
 msgstr ""
+"Požadovaný čas spuštěný je přibližný. Měření začne okolo vybrané hodiny (čas "
+"není přesný, aby se rozložila zátěž)."
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:45
 msgid "Select all"
@@ -141,6 +145,8 @@ msgid ""
 "No tests have been performed lately. Try to start a new test or re-"
 "download data."
 msgstr ""
+"V poslední době neproběhly žádné testy. Zkuste spustit nový test nebo znovu "
+"stáhnout data."
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:41
 msgid "N/A"
@@ -152,7 +158,7 @@ msgstr "Podrobnosti"
 
 #: reforis_netmetr/__init__.py:43
 msgid "Cannot update netmetr settings."
-msgstr ""
+msgstr "Nelze aktualizovat nastavení NetMetru."
 
 #~ msgid ""
 #~ "NetMetr measures your internet parameters "
