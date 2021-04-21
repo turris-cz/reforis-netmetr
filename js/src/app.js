@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -12,7 +12,7 @@ import Settings from "./Settings/Settings";
 import NetmetrIcon from "./NetmetrIcon";
 
 const NetmetrPlugin = {
-    name: _("Netmetr"),
+    name: _("NetMetr"),
     weight: 65,
     path: "/netmetr",
     pages: [
