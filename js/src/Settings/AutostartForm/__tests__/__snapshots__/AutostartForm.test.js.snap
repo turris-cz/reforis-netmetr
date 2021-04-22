@@ -24,12 +24,12 @@ exports[`<AutostartForm /> should render component 1`] = `
         class="custom-control-label"
         for="1"
       >
-        Enabled
+        Enable Autostart
       </label>
     </div>
   </div>
   <h3>
-    Select autostart hours
+    Select Autostart Hours
   </h3>
   <div
     class="btn-group"
