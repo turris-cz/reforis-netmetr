@@ -47,7 +47,7 @@ export default function ResultsTableRow({ performed_test }) {
                 >
                     {_("Details")}
                     <sup>
-                        <i className="fas fa-external-link-alt ml-1" />
+                        <i className="fas fa-external-link-alt fa-xs ml-1" />
                     </sup>
                 </a>
             </td>
