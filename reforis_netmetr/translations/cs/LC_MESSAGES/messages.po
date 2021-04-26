@@ -7,20 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-02 17:17+0100\n"
+"POT-Creation-Date: 2021-04-27 10:22+0200\n"
 "PO-Revision-Date: 2021-02-17 14:50+0000\n"
 "Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
-"reforis-netmetr-plugin/cs/>\n"
 "Language: cs\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/reforis-"
+"netmetr-plugin/cs/>\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.5\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: js/src/NetMetr.js:21
+#: js/src/NetMetr.js:21 js/src/app.js:15
 msgid "NetMetr"
 msgstr "NetMetr"
 
@@ -31,10 +30,6 @@ msgid ""
 msgstr ""
 "NetMetr měří parametry vašeho internetového připojení, například upload, "
 "download a dobu odezvy."
-
-#: js/src/app.js:15
-msgid "Netmetr"
-msgstr "NetMetr"
 
 #: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
 msgid "Speed Test"
@@ -53,20 +48,20 @@ msgid ""
 "Enable Autostart to allow automatic measurement on specific daily hours "
 "that can be chosen."
 msgstr ""
-"Povolení Automatického spouštění umožňuje automaticky měřit v určité denní "
-"hodiny, které si lze zvolit."
+"Povolení Automatického spouštění umožňuje automaticky měřit v určité "
+"denní hodiny, které si lze zvolit."
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:41
-msgid "Enabled"
-msgstr "Zapnuto"
+msgid "Enable Autostart"
+msgstr ""
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:56
 msgid ""
 "The requested start time is approximate. The measurement will start about"
 " the selected hour (time is no exact due to load distribution)."
 msgstr ""
-"Požadovaný čas spuštěný je přibližný. Měření začne okolo vybrané hodiny (čas "
-"není přesný, aby se rozložila zátěž)."
+"Požadovaný čas spuštěný je přibližný. Měření začne okolo vybrané hodiny "
+"(čas není přesný, aby se rozložila zátěž)."
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:45
 msgid "Select all"
@@ -77,20 +72,16 @@ msgid "Unselect all"
 msgstr "Nevybrat nic"
 
 #: js/src/Settings/AutostartForm/AutostratHoursForm.js:29
-msgid "Select autostart hours"
-msgstr "Vybrat hodiny pro automatické spouštění"
+msgid "Select Autostart Hours"
+msgstr ""
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
 "For more information you need to enter your sync code "
 "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" "
 "target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
-"external-link-alt link-outside-icon ml-1\"></i></sup></a>."
+"external-link-alt fa-xs ml-1\"></i></sup></a>."
 msgstr ""
-"Pro více informací je potřeba vložit váš synchronizační kód "
-"<strong>${syncCode}</strong><a href=\"${NETMETR_MY_URL}\" target=\"_blank\" "
-"rel=\"noopener noreferer\">sem<sup><i class=\"fas fa-external-link-alt link-"
-"outside-icon ml-1\"></i></sup></a>."
 
 #: js/src/SpeedTest/hooks.js:23
 msgid "Data downloaded successfully."
@@ -145,8 +136,8 @@ msgid ""
 "No tests have been performed lately. Try to start a new test or re-"
 "download data."
 msgstr ""
-"V poslední době neproběhly žádné testy. Zkuste spustit nový test nebo znovu "
-"stáhnout data."
+"V poslední době neproběhly žádné testy. Zkuste spustit nový test nebo "
+"znovu stáhnout data."
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:41
 msgid "N/A"
@@ -167,3 +158,29 @@ msgstr "Nelze aktualizovat nastavení NetMetru."
 
 #~ msgid "Cannot update NetMetr settings."
 #~ msgstr "Nelze aktualizovat nastavení NetMetru."
+
+#~ msgid "Netmetr"
+#~ msgstr "NetMetr"
+
+#~ msgid "Enabled"
+#~ msgstr "Zapnuto"
+
+#~ msgid "Select autostart hours"
+#~ msgstr "Vybrat hodiny pro automatické spouštění"
+
+#~ msgid ""
+#~ "For more information you need to "
+#~ "enter your sync code "
+#~ "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\""
+#~ " target=\"_blank\" rel=\"noopener "
+#~ "noreferer\">here<sup><i class=\"fas fa-external-"
+#~ "link-alt link-outside-icon "
+#~ "ml-1\"></i></sup></a>."
+#~ msgstr ""
+#~ "Pro více informací je potřeba vložit "
+#~ "váš synchronizační kód "
+#~ "<strong>${syncCode}</strong><a href=\"${NETMETR_MY_URL}\" "
+#~ "target=\"_blank\" rel=\"noopener noreferer\">sem<sup><i"
+#~ " class=\"fas fa-external-link-alt "
+#~ "link-outside-icon ml-1\"></i></sup></a>."
+

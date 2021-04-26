@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-02 17:17+0100\n"
+"POT-Creation-Date: 2021-04-27 10:22+0200\n"
 "PO-Revision-Date: 2020-04-01 12:59+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fi\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: js/src/NetMetr.js:21
+#: js/src/NetMetr.js:21 js/src/app.js:15
 msgid "NetMetr"
 msgstr ""
 
@@ -26,10 +26,6 @@ msgstr ""
 msgid ""
 "NetMetr measures your internet parameters like upload, download and "
 "response time."
-msgstr ""
-
-#: js/src/app.js:15
-msgid "Netmetr"
 msgstr ""
 
 #: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
@@ -51,7 +47,7 @@ msgid ""
 msgstr ""
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:41
-msgid "Enabled"
+msgid "Enable Autostart"
 msgstr ""
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:56
@@ -69,7 +65,7 @@ msgid "Unselect all"
 msgstr ""
 
 #: js/src/Settings/AutostartForm/AutostratHoursForm.js:29
-msgid "Select autostart hours"
+msgid "Select Autostart Hours"
 msgstr ""
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
@@ -77,7 +73,7 @@ msgid ""
 "For more information you need to enter your sync code "
 "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" "
 "target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
-"external-link-alt link-outside-icon ml-1\"></i></sup></a>."
+"external-link-alt fa-xs ml-1\"></i></sup></a>."
 msgstr ""
 
 #: js/src/SpeedTest/hooks.js:23
@@ -162,5 +158,24 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Cannot update NetMetr settings."
+#~ msgstr ""
+
+#~ msgid "Netmetr"
+#~ msgstr ""
+
+#~ msgid "Enabled"
+#~ msgstr ""
+
+#~ msgid "Select autostart hours"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For more information you need to "
+#~ "enter your sync code "
+#~ "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\""
+#~ " target=\"_blank\" rel=\"noopener "
+#~ "noreferer\">here<sup><i class=\"fas fa-external-"
+#~ "link-alt link-outside-icon "
+#~ "ml-1\"></i></sup></a>."
 #~ msgstr ""
 

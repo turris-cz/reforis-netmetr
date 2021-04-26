@@ -7,20 +7,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-02 17:17+0100\n"
+"POT-Creation-Date: 2021-04-27 10:22+0200\n"
 "PO-Revision-Date: 2021-02-08 14:50+0000\n"
 "Last-Translator: Yuraï Slovaque <assistance@simplix.fr>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/turris/"
-"reforis-netmetr-plugin/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris"
+"/reforis-netmetr-plugin/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: js/src/NetMetr.js:21
+#: js/src/NetMetr.js:21 js/src/app.js:15
 #, fuzzy
 msgid "NetMetr"
 msgstr "NetMetr"
@@ -32,11 +31,6 @@ msgid ""
 msgstr ""
 "NetMetr mesure vos paramètres Internet tels que le téléchargement, le "
 "téléversement et le temps de réponse."
-
-#: js/src/app.js:15
-#, fuzzy
-msgid "Netmetr"
-msgstr "Netmetr"
 
 #: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
 msgid "Speed Test"
@@ -60,8 +54,8 @@ msgstr ""
 "quotidienne aux horaires spécifiques qui peuvent être choisies."
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:41
-msgid "Enabled"
-msgstr "Activé"
+msgid "Enable Autostart"
+msgstr ""
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:56
 msgid ""
@@ -69,8 +63,8 @@ msgid ""
 " the selected hour (time is no exact due to load distribution)."
 msgstr ""
 "L'heure de début demandée est approximative. La mesure commencera vers "
-"l'heure sélectionnée (l'heure n'est pas exacte en raison de la répartition "
-"de la charge)."
+"l'heure sélectionnée (l'heure n'est pas exacte en raison de la "
+"répartition de la charge)."
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:45
 msgid "Select all"
@@ -81,20 +75,16 @@ msgid "Unselect all"
 msgstr "Tout désélectionner"
 
 #: js/src/Settings/AutostartForm/AutostratHoursForm.js:29
-msgid "Select autostart hours"
-msgstr "Sélectionner les heures de démarrage automatique"
+msgid "Select Autostart Hours"
+msgstr ""
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
 "For more information you need to enter your sync code "
 "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" "
 "target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
-"external-link-alt link-outside-icon ml-1\"></i></sup></a>."
+"external-link-alt fa-xs ml-1\"></i></sup></a>."
 msgstr ""
-"Pour plus d'informations, vous devez entrer votre code de synchronisation "
-"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" target=\"_blank\" "
-"rel=\"noopener noreferer\">ici<sup><i class=\"fas fa-external-linkici link-"
-"outside-icon ml-1\"></i></sup></a>."
 
 #: js/src/SpeedTest/hooks.js:23
 msgid "Data downloaded successfully."
@@ -149,8 +139,8 @@ msgid ""
 "No tests have been performed lately. Try to start a new test or re-"
 "download data."
 msgstr ""
-"Aucun test n'a été effectué récemment. Essayez de démarrer un nouveau test "
-"ou de re-télécharger les données."
+"Aucun test n'a été effectué récemment. Essayez de démarrer un nouveau "
+"test ou de re-télécharger les données."
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:41
 msgid "N/A"
@@ -171,3 +161,30 @@ msgstr "Impossible de mettre à jour les paramètres netmetr."
 
 #~ msgid "Cannot update NetMetr settings."
 #~ msgstr "Impossible de mettre à jour les paramètres de NetMetr."
+
+#~ msgid "Netmetr"
+#~ msgstr "Netmetr"
+
+#~ msgid "Enabled"
+#~ msgstr "Activé"
+
+#~ msgid "Select autostart hours"
+#~ msgstr "Sélectionner les heures de démarrage automatique"
+
+#~ msgid ""
+#~ "For more information you need to "
+#~ "enter your sync code "
+#~ "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\""
+#~ " target=\"_blank\" rel=\"noopener "
+#~ "noreferer\">here<sup><i class=\"fas fa-external-"
+#~ "link-alt link-outside-icon "
+#~ "ml-1\"></i></sup></a>."
+#~ msgstr ""
+#~ "Pour plus d'informations, vous devez "
+#~ "entrer votre code de synchronisation "
+#~ "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\""
+#~ " target=\"_blank\" rel=\"noopener "
+#~ "noreferer\">ici<sup><i class=\"fas fa-external-"
+#~ "linkici link-outside-icon "
+#~ "ml-1\"></i></sup></a>."
+
