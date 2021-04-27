@@ -72,7 +72,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>
@@ -100,7 +100,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>
@@ -128,7 +128,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>
@@ -156,7 +156,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>
@@ -184,7 +184,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>
@@ -212,7 +212,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>
@@ -240,7 +240,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>
@@ -268,7 +268,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>
@@ -296,7 +296,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>
@@ -324,7 +324,7 @@ exports[`<Results /> Should render component. 1`] = `
               Details
               <sup>
                 <i
-                  class="fas fa-external-link-alt ml-1"
+                  class="fas fa-external-link-alt fa-xs ml-1"
                 />
               </sup>
             </a>

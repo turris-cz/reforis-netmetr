@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ * Copyright (C) 2020-2021 CZ.NIC z.s.p.o. (http://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -38,7 +38,7 @@ export default function ResultsTableRow({ performed_test }) {
             <td>{formatedTime}</td>
             <td>{download}</td>
             <td>{upload}</td>
-            <td>{ping && ping > 0 ? ping : _("N/A")}</td>
+            <td>{ping && ping >= 0 ? ping : _("N/A")}</td>
             <td>
                 <a
                     href={`${NETMETR_DETAIL_URL}?${uuid}`}
@@ -47,7 +47,7 @@ export default function ResultsTableRow({ performed_test }) {
                 >
                     {_("Details")}
                     <sup>
-                        <i className="fas fa-external-link-alt ml-1" />
+                        <i className="fas fa-external-link-alt fa-xs ml-1" />
                     </sup>
                 </a>
             </td>
