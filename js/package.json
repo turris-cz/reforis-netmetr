@@ -6,7 +6,7 @@
         "url": "https://gitlab.nic.cz/turris/reforis/reforis-netmetr.git"
     },
     "license": "GPL-3.0",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "description": "reForis NetMetr Plugin",
     "main": "./src/app.js",
     "dependencies": {

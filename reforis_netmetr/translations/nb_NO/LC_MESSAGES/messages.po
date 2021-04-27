@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-02 17:17+0100\n"
-"PO-Revision-Date: 2020-11-11 11:28+0000\n"
+"POT-Creation-Date: 2021-04-27 10:22+0200\n"
+"PO-Revision-Date: 2021-02-03 14:14+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language: nb\n"
+"Language: nb_NO\n"
 "Language-Team: Norwegian Bokmål "
 "<https://hosted.weblate.org/projects/turris/reforis-netmetr-"
 "plugin/nb_NO/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: js/src/NetMetr.js:21
+#: js/src/NetMetr.js:21 js/src/app.js:15
 msgid "NetMetr"
 msgstr "NetMetr"
 
@@ -29,10 +29,8 @@ msgid ""
 "NetMetr measures your internet parameters like upload, download and "
 "response time."
 msgstr ""
-
-#: js/src/app.js:15
-msgid "Netmetr"
-msgstr ""
+"Netmetr måler dine internettparameter, som opplasting-, "
+"nedlastingshastighet og responstid."
 
 #: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
 msgid "Speed Test"
@@ -51,16 +49,20 @@ msgid ""
 "Enable Autostart to allow automatic measurement on specific daily hours "
 "that can be chosen."
 msgstr ""
+"Skru på autostart for å tillate automatisk opplasting ved spesifikke "
+"daglige tidspunkt som kan velges."
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:41
-msgid "Enabled"
-msgstr "Påskrudd"
+msgid "Enable Autostart"
+msgstr ""
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:56
 msgid ""
 "The requested start time is approximate. The measurement will start about"
 " the selected hour (time is no exact due to load distribution)."
 msgstr ""
+"Forespurt starttid er omtrentlig. Målingen vil starte i valgt time (tid "
+"er ikke eksakt som følge av lastvarighet)."
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:45
 msgid "Select all"
@@ -71,18 +73,16 @@ msgid "Unselect all"
 msgstr "Fravelg alle"
 
 #: js/src/Settings/AutostartForm/AutostratHoursForm.js:29
-msgid "Select autostart hours"
-msgstr "Velg autostart-tidspunkt"
+msgid "Select Autostart Hours"
+msgstr ""
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
 "For more information you need to enter your sync code "
 "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" "
 "target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
-"external-link-alt link-outside-icon ml-1\"></i></sup></a>."
+"external-link-alt fa-xs ml-1\"></i></sup></a>."
 msgstr ""
-"For mer info trenger du å skrive inn din synkroniseringskode "
-"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\">her</a>."
 
 #: js/src/SpeedTest/hooks.js:23
 #, fuzzy
@@ -91,19 +91,20 @@ msgstr "Data nedlastet."
 
 #: js/src/SpeedTest/hooks.js:27
 msgid "Data downloading failed."
-msgstr ""
+msgstr "Datanedlasting mislyktes."
 
 #: js/src/SpeedTest/hooks.js:41
+#, fuzzy
 msgid "Speed test finished successfully."
-msgstr ""
+msgstr "Hastighetstest fullført."
 
 #: js/src/SpeedTest/hooks.js:45
 msgid "Speed test failed."
-msgstr ""
+msgstr "Hastighetstest mislyktes."
 
 #: js/src/SpeedTest/ControlButtons/RedownloadDataButton.js:36
 msgid "Redownload data"
-msgstr ""
+msgstr "Last ned data igjen"
 
 #: js/src/SpeedTest/ControlButtons/StartTestButton.js:32
 msgid "Start test"
@@ -118,26 +119,31 @@ msgid "Date and Time"
 msgstr "Dato og tid"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:35
+#, fuzzy
 msgid "Download [Mb/s]"
-msgstr ""
+msgstr "Nedlasting [Mb/s]"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:36
+#, fuzzy
 msgid "Upload [Mb/s]"
-msgstr ""
+msgstr "Opplasting [Mb/s]"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:37
 msgid "Ping [ms]"
-msgstr ""
+msgstr "Nettverksforsinkelse [ms]"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:38
+#, fuzzy
 msgid "Link"
-msgstr ""
+msgstr "Lenke"
 
 #: js/src/SpeedTest/Results/ResultsTable.js:53
 msgid ""
 "No tests have been performed lately. Try to start a new test or re-"
 "download data."
 msgstr ""
+"Ingen tester har blitt utført i det siste. Prøv å starte en ny test for å"
+" laste ned data igjen."
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:41
 msgid "N/A"
@@ -148,8 +154,9 @@ msgid "Details"
 msgstr "Detaljer"
 
 #: reforis_netmetr/__init__.py:43
+#, fuzzy
 msgid "Cannot update netmetr settings."
-msgstr ""
+msgstr "Kan ikke oppdatere netmetr-innstillinger."
 
 #~ msgid ""
 #~ "NetMetr measures your internet parameters "
@@ -158,4 +165,27 @@ msgstr ""
 
 #~ msgid "Cannot update NetMetr settings."
 #~ msgstr "Kan ikke oppdatere NetMetr-innstillinger."
+
+#~ msgid "Netmetr"
+#~ msgstr "Netmetr"
+
+#~ msgid "Enabled"
+#~ msgstr "Påskrudd"
+
+#~ msgid "Select autostart hours"
+#~ msgstr "Velg autostart-tidspunkt"
+
+#~ msgid ""
+#~ "For more information you need to "
+#~ "enter your sync code "
+#~ "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\""
+#~ " target=\"_blank\" rel=\"noopener "
+#~ "noreferer\">here<sup><i class=\"fas fa-external-"
+#~ "link-alt link-outside-icon "
+#~ "ml-1\"></i></sup></a>."
+#~ msgstr ""
+#~ "For mer info trenger du å skrive"
+#~ " inn din synkroniseringskode "
+#~ "<strong>${syncCode}</strong> <a "
+#~ "href=\"${NETMETR_MY_URL}\">her</a>."
 

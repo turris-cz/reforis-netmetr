@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-02-02 17:17+0100\n"
-"PO-Revision-Date: 2020-11-18 21:28+0000\n"
-"Last-Translator: Artem <KovalevArtem.ru@gmail.com>\n"
+"POT-Creation-Date: 2021-04-27 10:22+0200\n"
+"PO-Revision-Date: 2021-02-19 07:02+0000\n"
+"Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
 "Language: ru\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris"
 "/reforis-netmetr-plugin/ru/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: js/src/NetMetr.js:21
+#: js/src/NetMetr.js:21 js/src/app.js:15
 msgid "NetMetr"
 msgstr "NetMetr"
 
@@ -31,10 +31,6 @@ msgid ""
 msgstr ""
 "NetMetr измеряет ваши интернет-параметры, такие как скорость приёма, "
 "передачи и время отклика."
-
-#: js/src/app.js:15
-msgid "Netmetr"
-msgstr ""
 
 #: js/src/SpeedTest/SpeedTest.js:37 js/src/app.js:21
 msgid "Speed Test"
@@ -53,16 +49,20 @@ msgid ""
 "Enable Autostart to allow automatic measurement on specific daily hours "
 "that can be chosen."
 msgstr ""
+"Включите Автозапуск, чтобы разрешить автоматическое измерение в "
+"определенные ежедневные часы по выбору."
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:41
-msgid "Enabled"
-msgstr "Включено"
+msgid "Enable Autostart"
+msgstr ""
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:56
 msgid ""
 "The requested start time is approximate. The measurement will start about"
 " the selected hour (time is no exact due to load distribution)."
 msgstr ""
+"Запрошенное время начала является приблизительным. Измерение начнется "
+"примерно в выбранный час (время неточно из-за распределения нагрузки)."
 
 #: js/src/Settings/AutostartForm/AutostartHoursButtons.js:45
 msgid "Select all"
@@ -73,19 +73,16 @@ msgid "Unselect all"
 msgstr "Снять все"
 
 #: js/src/Settings/AutostartForm/AutostratHoursForm.js:29
-msgid "Select autostart hours"
-msgstr "Выбрать часы автозапуска"
+msgid "Select Autostart Hours"
+msgstr ""
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
 "For more information you need to enter your sync code "
 "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" "
 "target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
-"external-link-alt link-outside-icon ml-1\"></i></sup></a>."
+"external-link-alt fa-xs ml-1\"></i></sup></a>."
 msgstr ""
-"Для получения дополнительной информации вам необходимо ввести свой код "
-"синхронизации <strong> $ {syncCode}</strong> <a "
-"href=\"${ndomNETMETR_MY_URL}\"> здесь</a>."
 
 #: js/src/SpeedTest/hooks.js:23
 msgid "Data downloaded successfully."
@@ -140,6 +137,8 @@ msgid ""
 "No tests have been performed lately. Try to start a new test or re-"
 "download data."
 msgstr ""
+"В последнее время никаких тестов не проводилось. Попробуйте начать новый "
+"тест или повторно загрузите данные."
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:41
 msgid "N/A"
@@ -151,8 +150,31 @@ msgstr "Подробности"
 
 #: reforis_netmetr/__init__.py:43
 msgid "Cannot update netmetr settings."
-msgstr ""
+msgstr "Не удается обновить настройки netmetr."
 
 #~ msgid "Cannot update NetMetr settings."
 #~ msgstr "Не удается обновить настройки NetMetr."
+
+#~ msgid "Netmetr"
+#~ msgstr "Netmetr"
+
+#~ msgid "Enabled"
+#~ msgstr "Включено"
+
+#~ msgid "Select autostart hours"
+#~ msgstr "Выбрать часы автозапуска"
+
+#~ msgid ""
+#~ "For more information you need to "
+#~ "enter your sync code "
+#~ "<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\""
+#~ " target=\"_blank\" rel=\"noopener "
+#~ "noreferer\">here<sup><i class=\"fas fa-external-"
+#~ "link-alt link-outside-icon "
+#~ "ml-1\"></i></sup></a>."
+#~ msgstr ""
+#~ "Для получения дополнительной информации вам"
+#~ " необходимо ввести свой код синхронизации"
+#~ " <strong> $ {syncCode}</strong> <a "
+#~ "href=\"${ndomNETMETR_MY_URL}\"> здесь</a>."
 
