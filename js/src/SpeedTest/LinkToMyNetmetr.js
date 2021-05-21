@@ -15,6 +15,7 @@ LinkToMyNetmetr.propTypes = {
 };
 
 export default function LinkToMyNetmetr({ syncCode }) {
+    if (!syncCode) return null;
     return (
         <p
             dangerouslySetInnerHTML={{
