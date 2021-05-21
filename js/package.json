@@ -10,7 +10,7 @@
     "description": "reForis NetMetr Plugin",
     "main": "./src/app.js",
     "dependencies": {
-        "foris": "^5.1.11",
+        "foris": "^5.1.12",
         "moment": "^2.24.0",
         "react-uid": "^2.2.0"
     },
