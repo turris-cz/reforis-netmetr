@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-04-27 10:22+0200\n"
-"PO-Revision-Date: 2021-02-19 07:02+0000\n"
+"PO-Revision-Date: 2021-04-28 09:32+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/"
+"reforis-netmetr-plugin/ru/>\n"
 "Language: ru\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/turris"
-"/reforis-netmetr-plugin/ru/>\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.7-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/NetMetr.js:21 js/src/app.js:15
@@ -54,7 +55,7 @@ msgstr ""
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:41
 msgid "Enable Autostart"
-msgstr ""
+msgstr "Включить автозапуск"
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:56
 msgid ""
@@ -74,7 +75,7 @@ msgstr "Снять все"
 
 #: js/src/Settings/AutostartForm/AutostratHoursForm.js:29
 msgid "Select Autostart Hours"
-msgstr ""
+msgstr "Выберите часы автозапуска"
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
@@ -83,6 +84,10 @@ msgid ""
 "target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
 "external-link-alt fa-xs ml-1\"></i></sup></a>."
 msgstr ""
+"Для получения дополнительной информации вам необходимо ввести свой код "
+"синхронизации <strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" "
+"target=\"_blank\" rel=\"noopener noreferer\">здесь<sup><i class=\"fas fa-"
+"external-link-alt fa-xs ml-1\"></i></sup></a>."
 
 #: js/src/SpeedTest/hooks.js:23
 msgid "Data downloaded successfully."
@@ -142,7 +147,7 @@ msgstr ""
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:41
 msgid "N/A"
-msgstr "Н/Д"
+msgstr "Не доступно"
 
 #: js/src/SpeedTest/Results/ResultsTableRow.js:48
 msgid "Details"
@@ -177,4 +182,3 @@ msgstr "Не удается обновить настройки netmetr."
 #~ " необходимо ввести свой код синхронизации"
 #~ " <strong> $ {syncCode}</strong> <a "
 #~ "href=\"${ndomNETMETR_MY_URL}\"> здесь</a>."
-

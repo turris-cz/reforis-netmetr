@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2021-04-27 10:22+0200\n"
-"PO-Revision-Date: 2021-02-17 14:50+0000\n"
+"PO-Revision-Date: 2021-04-29 12:32+0000\n"
 "Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
+"reforis-netmetr-plugin/cs/>\n"
 "Language: cs\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/reforis-"
-"netmetr-plugin/cs/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.7-dev\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: js/src/NetMetr.js:21 js/src/app.js:15
@@ -53,7 +54,7 @@ msgstr ""
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:41
 msgid "Enable Autostart"
-msgstr ""
+msgstr "Povolit automatické spouštění"
 
 #: js/src/Settings/AutostartForm/AutostartForm.js:56
 msgid ""
@@ -73,7 +74,7 @@ msgstr "Nevybrat nic"
 
 #: js/src/Settings/AutostartForm/AutostratHoursForm.js:29
 msgid "Select Autostart Hours"
-msgstr ""
+msgstr "Vybrat hodiny pro automatické spouštění"
 
 #: js/src/SpeedTest/LinkToMyNetmetr.js:21
 msgid ""
@@ -82,6 +83,10 @@ msgid ""
 "target=\"_blank\" rel=\"noopener noreferer\">here<sup><i class=\"fas fa-"
 "external-link-alt fa-xs ml-1\"></i></sup></a>."
 msgstr ""
+"Pro více informace potřebujete vložit synchronizační kód "
+"<strong>${syncCode}</strong> <a href=\"${NETMETR_MY_URL}\" target=\"_blank\" "
+"rel=\"noopener noreferer\">zde<sup><i class=\"fas fa-external-link-alt fa-xs "
+"ml-1\"></i></sup></a>."
 
 #: js/src/SpeedTest/hooks.js:23
 msgid "Data downloaded successfully."
@@ -183,4 +188,3 @@ msgstr "Nelze aktualizovat nastavení NetMetru."
 #~ "target=\"_blank\" rel=\"noopener noreferer\">sem<sup><i"
 #~ " class=\"fas fa-external-link-alt "
 #~ "link-outside-icon ml-1\"></i></sup></a>."
-
